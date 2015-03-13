@@ -1,0 +1,19 @@
+---
+title: 팀 소개 | The Whale Games
+members:
+  - fred
+  - skyoon
+  - jwheo
+  - skkwon
+  - skjang
+  - shkim
+  - kyjung
+---
+
+= partial "partials/nav"
+
+.wrap-container
+  %ul
+    - current_page.data.members.each do |member|
+      %li
+        = partial "partials/members/#{member}"
