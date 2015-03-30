@@ -2,7 +2,6 @@
 title: 업무환경 | The Whale Games
 ---
 = partial "partials/nav"
-
 .wrap-container
   %p
     4호선과 2호선이 교차하는 교통의 요지, 사당역 인근에 사무실 위치
@@ -18,3 +17,13 @@ title: 업무환경 | The Whale Games
   %p
     특히, 개발자/디자이너의 경우 PC와 모니터, 키보드 등의 주변기기를
     원하는대로 맞춤형으로 제공합니다.
+  #map
+
+:javascript
+  var map = new GMaps({
+    el: "#map",
+    lat: -12.043333,
+    lng: -77.028333
+  });
+
+

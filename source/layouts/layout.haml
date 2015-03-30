@@ -10,6 +10,7 @@
     %title= current_page.data.title || "The Middleman"
 
     = stylesheet_link_tag "normalize", "all", "code"
+    %script{src: "http://maps.google.com/maps/api/js?sensor=true"}
     = javascript_include_tag  "all"
 
   %body{class: page_classes}
