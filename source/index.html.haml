@@ -1,22 +1,36 @@
 ---
 title: "The Whale Games"
+members:
+  - fred
+  - skyoon
+  - jwheo
+  - skkwon
+  - skjang
+  - shkim
+  - kyjung
+  - eslee
 ---
 
 = partial "partials/hero"
 
-.wrap-container.main
+.container
   %section#company
+    .members
+      - current_page.data.members.each do |member|
+        = link_to "team.html##{member}" do
+          = image_tag("members/#{member}.jpg", class: 'member')
     %p
       2013년 6월에 설립되었고, 대기업-게임회사-스타트업 등의 다양한 백그라운드를
       가진 8명의 인재들이 함께하고 있습니다.
 
   %section#service
+    = image_tag('battlecomics.png')
     %p
-      게임 전문 웹툰 서비스인 <q>배틀코믹스</q>를 서비스하고 있습니다.
-
-    %p
-      배틀코믹스는 현재 약 170여명의 작가들이 작품을 연재 중이며, 구글 스토어 평점
-      4.9의 높은 평가를 받고 있습니다.
+      게임 전문 웹툰 서비스인
+      = link_to "배틀코믹스", "http://battlecomics.co.kr"
+      를 서비스하고 있습니다.
+      배틀코믹스는 현재 약 <em>170여명의 작가</em>들이 작품을 연재 중이며, <em>구글 스토어 평점
+      4.9</em>의 높은 평가를 받고 있습니다.
 
   %section#vision
     %p

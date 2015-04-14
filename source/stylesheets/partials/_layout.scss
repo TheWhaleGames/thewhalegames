@@ -1,7 +1,17 @@
 .wrap-container {
   @include outer-container;
 }
-
-.wrap-container.main {
-  padding: $base-spacing;
+.container {
+  margin: $base-spacing;
+  @include outer-container;
+  section {
+    @include media($medium-screen) {
+      @include span-columns(8);
+      @include shift(2);
+    }
+  }
+  font-size: 1em;
+  @include media($medium-screen) {
+    font-size: 1.4em;
+  }
 }

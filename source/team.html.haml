@@ -13,8 +13,7 @@ members:
 
 = partial "partials/nav"
 
-.wrap-container.main
-  %ul
-    - current_page.data.members.each do |member|
-      %li
-        = partial "partials/members/#{member}"
+.container
+  - current_page.data.members.each do |member|
+    %section{id: "#{member}"}
+      = partial "partials/members/#{member}"

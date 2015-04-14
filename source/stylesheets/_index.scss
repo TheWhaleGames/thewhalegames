@@ -1,0 +1,23 @@
+.index {
+  section {
+    margin-bottom: $base-spacing * 2;
+  }
+  #company {
+    .members {
+      text-align: center;
+    }
+    img.member {
+      width: 10%;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  #service {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
