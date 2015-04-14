@@ -1,3 +1,7 @@
 .wrap-container {
   @include outer-container;
 }
+
+.wrap-container.main {
+  padding: $base-spacing;
+}
