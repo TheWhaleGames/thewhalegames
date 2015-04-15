@@ -1,5 +1,5 @@
 .global-nav {
-  height: 4em;
+  // height: 4em;
   background-color: $ci-primary;
   padding: 1em 0;
   position: relative;
@@ -19,6 +19,7 @@
 }
 
 .global-nav-list {
+  display: inline-block;
   float: right;
   line-height: 2em;
 }

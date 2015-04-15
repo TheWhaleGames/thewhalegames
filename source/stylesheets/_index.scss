@@ -1,5 +1,5 @@
 .index {
-  section {
+ section {
     margin-bottom: $base-spacing * 2;
   }
   #company {
@@ -14,10 +14,28 @@
     }
   }
 
-  #service {
+  #service, #vision {
     img {
       display: block;
       margin: 0 auto;
+    }
+  }
+
+  .container section {
+    font-size: 1.2em;
+    em {
+      font-weight: bold;
+      font-style: normal;
+      @include media($medium-screen) {
+        font-size: 1.4em;
+        font-style: normal;
+      }
+    }
+  }
+
+  #service {
+    a {
+      color: $battlecomics-primary-color;
     }
   }
 }

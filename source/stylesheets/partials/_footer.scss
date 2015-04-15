@@ -1,5 +1,29 @@
 footer {
   background: #303030;
-  color: white;
-  height: 200px;
+  color: $light-gray;
+
+  a {
+    color: $medium-gray;
+    &:hover {
+      color: $light-gray;
+    }
+  }
+
+  .wrap-container {
+    padding: $base-spacing;
+
+    address {
+      @include span-columns(12);
+      @include media($medium-screen) {
+        @include span-columns(8);
+      }
+    }
+
+    .contact {
+      @include span-columns(12);
+      @include media($medium-screen) {
+        @include span-columns(4);
+      }
+    }
+  }
 }

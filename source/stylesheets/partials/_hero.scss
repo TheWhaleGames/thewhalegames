@@ -9,6 +9,9 @@
 
   .vision {
     margin-top: $base-spacing;
-    font-size: 1.5em;
+    font-size: 1.2em;
+    @include media($medium-screen) {
+      font-size: 1.5em;
+    }
   }
 }
