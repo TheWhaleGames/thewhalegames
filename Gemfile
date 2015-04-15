@@ -19,3 +19,6 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 gem 'bitters'
 gem 'bourbon'
 gem 'neat'
+
+gem 'middleman-deploy', '~> 1.0'
+gem 'dotenv'
