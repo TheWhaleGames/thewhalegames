@@ -3,6 +3,7 @@
 }
 .container {
   margin: $base-spacing;
+  padding: $base-spacing/2;
   @include outer-container;
   section {
     @include media($medium-screen) {
@@ -13,5 +14,6 @@
   font-size: 1.2em;
   @include media($medium-screen) {
     font-size: 1.4em;
+    padding: 0;
   }
 }
