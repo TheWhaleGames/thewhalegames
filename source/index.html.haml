@@ -9,6 +9,7 @@ members:
   - shkim
   - kyjung
   - eslee
+  - jhlim
 ---
 
 = partial "partials/hero"
@@ -21,7 +22,7 @@ members:
           = image_tag("members/#{member}.jpg", class: 'member')
     %p
       <em>2013년 6월</em>에 설립되었고, 대기업-게임회사-스타트업 등의 다양한 백그라운드를
-      가진 <em>8명의 인재</em>들이 함께하고 있습니다.
+      가진 <em>#{current_page.data.members.count}명의 인재</em>들이 함께하고 있습니다.
 
   %section#service
     = image_tag('battlecomics-logo.png')
