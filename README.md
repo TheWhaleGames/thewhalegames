@@ -4,7 +4,9 @@
 
 ```
 $ git clone https://github.com/TheWhaleGames/thewhalegames.git
-$ cd thewhalegames
+$ vagrant up
+$ vagrant ssh
+$ gem install bundler
 $ bundle install
 $ bundle exec middleman
 ```
