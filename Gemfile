@@ -22,3 +22,5 @@ gem 'neat'
 
 gem 'middleman-deploy', '~> 1.0'
 gem 'dotenv'
+
+gem 'middleman-jquery'

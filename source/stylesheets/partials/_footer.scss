@@ -9,8 +9,10 @@ footer {
     }
   }
 
-  .wrap-container {
+  .wrap-container-footer {
     padding: $base-spacing;
+      background: #303030;
+      color: $light-gray;
 
     address {
       @include span-columns(12);

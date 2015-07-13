@@ -1,8 +1,11 @@
 .global-nav {
-  // height: 4em;
+  width : 100%;
+  position : fixed;
+  top : 0;
+  z-index : 1;
+  height : 4em;
   background-color: $ci-primary;
   padding: 1em 0;
-  position: relative;
 
   a {
     color: white;
@@ -11,22 +14,37 @@
   a:hover {
     color: lighten($ci-primary, 40);
   }
+
+  .wrap-container {
+
+    .global-nav-item {
+      display: inline-block;
+      margin-right: 6em;
+    }
+
+    .global-nav-list {
+      position : absolute;
+      left : 50%;
+      margin-left : -13.5vw;
+
+      display: inline-block;
+      line-height: 2em;
+
+    }
+
+    li:hover {
+      cursor : default;
+    }
+
+    .logo-text {
+      cursor : default;
+      position : absolute;
+      left : 0;
+      margin-left: 1em;
+      float: left;
+      font-size: 1.25em;
+      font-weight: 700;
+    }
+  }
 }
 
-.global-nav-item {
-  display: inline-block;
-  margin-right: 2em;
-}
-
-.global-nav-list {
-  display: inline-block;
-  float: right;
-  line-height: 2em;
-}
-
-.logo-text {
-  margin-left: 1em;
-  float: left;
-  font-size: 1.25em;
-  font-weight: 700;
-}

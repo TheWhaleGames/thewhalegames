@@ -133,6 +133,13 @@ dfn {
     font-style: italic;
 }
 
+/*ADDED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+em {
+  font-size : 1.4em;
+  font-weight : bold;
+  font-style : normal;
+}
+
 /*
  * Addresses styling not present in IE 8/9.
  */

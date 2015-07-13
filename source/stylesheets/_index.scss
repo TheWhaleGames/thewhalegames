@@ -1,41 +1,86 @@
 .index {
- section {
-    margin-bottom: $base-spacing * 2;
-  }
-  #company {
-    .members {
-      text-align: center;
-    }
-    img.member {
-      width: 10%;
-      &:hover {
-        opacity: 0.8;
+  .container {
+    font-size : 1.6em;
+    text-align : center;
+
+    section {
+      margin : 15% 18.5%;
+      width : 63%;
+
+      button {
+        display : -webkit-flex;
+        display :         flex;
+        -webkit-align-items : center;
+        align-items : center;
+        -webkit-justify-content : center;
+        justify-content : center;
+      }
+
+      button.arrow { /*arrow down*/
+        font-size : 1em;
+        color : $medium-gray;
+        background-color : white;
+      }
+
+      button.arrowReverse { /*arrow up*/
+        font-size : 1em;
+        color : $medium-gray;
+        background-color : white;
       }
     }
-  }
 
-  #service, #vision {
-    img {
-      display: block;
-      margin: 0 auto;
-    }
-  }
+    #company {
+      img.member {
+        width: 10%;
 
-  .container section {
-    font-size: 1.2em;
-    em {
-      font-weight: bold;
-      font-style: normal;
-      @include media($medium-screen) {
-        font-size: 1.4em;
-        font-style: normal;
+        /*&:hover {*/
+          /*opacity: 0.8;*/
+        /*}*/
+      }
+
+      p {
+        margin-top : $small-spacing;
       }
     }
-  }
 
-  #service {
-    a {
-      color: $battlecomics-primary-color;
+    #service, #vision {
+      img {
+        display: block;
+        margin : 0 auto;
+      }
+    }
+
+    #service {
+      a {
+        color: $battlecomics-primary-color;
+      }
+    }
+
+    #members {
+      text-align : center;
+
+      section {
+        display : inline-block;
+        .profile {
+          .profile__name {
+            clear : left;
+            color: #787878;
+          }
+          .profile__position {
+            color: #9664bd;
+          }
+        }
+
+        p {
+          text-align : center;
+          display : none;
+        }
+
+        #example {
+          text-align : left;
+          display : none;
+        }
+      }
     }
   }
 }

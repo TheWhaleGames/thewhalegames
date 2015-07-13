@@ -1,9 +1,11 @@
 .hero {
+  height : 100vh;
   color: white;
   background: $ci-primary;
   text-align: center;
 
   img {
+    margin-top : 18vh;
     width: 60%;
   }
 
@@ -13,5 +15,25 @@
     @include media($medium-screen) {
       font-size: 1.5em;
     }
+  }
+
+  .seeMore {
+    font-family : COURIER-NEW;
+    font-size : 2em;
+    /*display : inline-block;*/
+    -webkit-align-items : center;
+    align-items : center;
+    -webkit-justify-content : center;
+    justify-content : center;
+
+    padding : 0;
+    height : 1.5em;
+    width : 7em;;
+
+    position : absolute;
+    bottom : 1em;
+    margin-left : -4em;
+
+    border : 1px solid white;
   }
 }
