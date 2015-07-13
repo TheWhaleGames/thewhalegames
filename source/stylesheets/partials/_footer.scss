@@ -11,10 +11,11 @@ footer {
 
   .wrap-container-footer {
     padding: $base-spacing;
-      background: #303030;
-      color: $light-gray;
+    /*background: #303030;*/
+    /*color: $light-gray;*/
 
     address {
+      /*color: $light-gray;*/
       @include span-columns(12);
       @include media($medium-screen) {
         @include span-columns(8);
