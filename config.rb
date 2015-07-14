@@ -6,7 +6,7 @@ Dotenv.load
 
 # Reload the browser automatically whenever files change
 configure :development do
-/  activate :livereload, :host => '127.0.0.1'/
+  activate :livereload, :host => '127.0.0.1'
 end
 
 # Methods defined in the helpers block are available in templates
