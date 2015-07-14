@@ -15,11 +15,10 @@ members:
 = partial "partials/hero"
 
 .container
-
+  %canvas#trianglify
   %section#company
     .members
       - current_page.data.members.each do |member|
-        -#= link_to "#members##{member}" do
         = image_tag("members/#{member}.jpg", class: 'member')
     %p
       <em>2013년 6월</em>에 설립되었고, 대기업-게임회사-스타트업 등의 다양한 백그라운드를
@@ -82,7 +81,6 @@ members:
       원하는대로 맞춤형으로 제공합니다.
     %button.arrow ▽
     -#===========================================
-
 
   %section#join_us
     %button.arrowReverse △

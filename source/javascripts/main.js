@@ -3,76 +3,49 @@
  */
 
 var jump = function(e) {
-  //prevent the "normal" behaviour which would be a "hard" jump
   e.preventDefault();
 
-  console.log("seeMore clicked");
-  //Get the target
   var target = $(this);
 
-  //perform animated scrolling
   $('html, body').animate({
 
-    //get top-position of target-element and set it as scroll target
-    //scrollTop: $(target).offset().top
+    scrollTop : $(target.parent()).offset().top + 200
 
-    scrollTop : $(target).offset().top
-
-    //scrolldelay: 1 seconds
-  }, 1000, function(){
-    //attach the hash (#jumptarget) to the pageurl
+  }, 500, function(){
     location.hash = target;
   });
 }
 
 var jumpUp = function(e) {
-  console.log("top");
   e.preventDefault();
 
   var target = $(this);
-  //perform animated scrolling
   $('html, body').animate({
 
-    //get top-position of target-element and set it as scroll target
     scrollTop : $(target).parent().prev("section").offset().top - 200
 
-    //scrollTop: $(target).offset().bottom
-
-    //scrolldelay: 1 seconds
-  }, 1000, function(){
-    //attach the hash (#jumptarget) to the pageurl
+  }, 500, function(){
     location.hash = target;
   });
 
 }
 
 var jumpDown = function(e) {
-  //prevent the "normal" behaviour which would be a "hard" jump
   e.preventDefault();
 
-  console.log("arrow down clicked");
-  //Get the target
   var target = $(this);
 
-  //perform animated scrolling
   $('html, body').animate({
-
-    //get top-position of target-element and set it as scroll target
-
-    //scrollTop : $(target.closest("button.arrow")).offset().top
 
     scrollTop : $(target).parent().next().offset().top - 200
 
-    //scrolldelay: 1 seconds
-  }, 1000, function(){
-    //attach the hash (#jumptarget) to the pageurl
+  }, 500, function(){
     location.hash = target;
   });
 }
 
 var hero = function(e) {
   e.preventDefault();
-  console.log("hero");
 
   var target = $(this);
 
@@ -121,6 +94,19 @@ var join = function(e) {
 
 $(function(){
 
+  //canvas : HTML5
+  //old vers. IE에서 HTML5 지원 안되는데 이런 경우에 대한 처리 -> image 삽입 or polyfill?
+  //src :  http://www.yjn.kr/bbs/board.php?bo_table=prog_html&wr_id=771
+
+  var pattern = Trianglify({
+    //width: window.innerWidth, height: window.innerHeight
+    width : $(".container").outerWidth(), height : $(".container").outerHeight()
+  });
+
+  pattern.canvas(document.getElementById("trianglify"));
+
+  $(".container").css("background-image");
+
   $(".seeMore").bind("click", jump);
   $(".arrow").bind("click", jumpDown);
   $(".arrowReverse").bind("click", jumpUp);
@@ -131,11 +117,26 @@ $(function(){
   $("ul.global-nav-list li:nth-child(3)").bind("click", join);
 
   $('#members section').each(function(){
-    console.log("show profile");
 
     $($(this).find(".profile img")).click(function(){
       $($($(this).closest(".profile")).find("p")).toggle();
       $($($(this).closest(".profile")).find("#example")).toggle();
     });
   });
+
+  /*
+  * source : jsfiddle.net/tcloninger/e5qad/
+  */
+
+  //$(window).scroll( function(){
+    //$('.container section').each( function(i){
+    //console.log("scroll appear");
+      //var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+      //var bottom_of_window = $(window).scrollTop() + $(window).height();
+
+      //if(bottom_of_window > bottom_of_object) {
+        //$(this).animate({'opacity' : '1'}, 3000);
+      //}
+    //});
+  //});
 });
