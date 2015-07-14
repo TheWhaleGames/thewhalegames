@@ -99,8 +99,7 @@ $(function(){
   //src :  http://www.yjn.kr/bbs/board.php?bo_table=prog_html&wr_id=771
 
   var pattern = Trianglify({
-    //width: window.innerWidth, height: window.innerHeight
-    width : $(".container").outerWidth(), height : $(".container").outerHeight()
+    width : $("canvas").outerWidth(), height : $(document).innerHeight()
   });
 
   pattern.canvas(document.getElementById("trianglify"));
@@ -128,15 +127,4 @@ $(function(){
   * source : jsfiddle.net/tcloninger/e5qad/
   */
 
-  //$(window).scroll( function(){
-    //$('.container section').each( function(i){
-    //console.log("scroll appear");
-      //var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-      //var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-      //if(bottom_of_window > bottom_of_object) {
-        //$(this).animate({'opacity' : '1'}, 3000);
-      //}
-    //});
-  //});
 });

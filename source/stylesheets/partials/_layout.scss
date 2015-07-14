@@ -3,9 +3,6 @@
 }
 
 .container {
-  /*margin: $base-spacing * 3;*/
-  /*padding: $base-spacing/2;*/
-
   @include outer-container;
   section {
     @include media($medium-screen) {
