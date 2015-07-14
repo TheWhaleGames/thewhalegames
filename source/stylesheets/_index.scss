@@ -1,7 +1,17 @@
 .index {
   .container {
+    /*opacity : 0;*/
     font-size : 1.6em;
     text-align : center;
+
+    position : relative;
+
+    #trianglify {
+      position : absolute;
+      top : 0;
+      left : 0;
+      z-index : -1;
+    }
 
     section {
       margin : 15% 18.5%;
