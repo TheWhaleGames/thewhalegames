@@ -23,14 +23,10 @@
     }
 
     .global-nav-list {
-      -webkit-align-items : center;
-      align-items : center;
-      -webkit-justify-content : center;
-      justify-content : center;
       margin-right : -5em;
-      /*position : absolute;*/
-      /*left : 50%;*/
-      /*margin-left : -13.5vw;*/
+      position : absolute;
+      left : 50%;
+      margin-left : -13.5vw;
 
       display: inline-block;
       line-height: 2em;
