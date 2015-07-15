@@ -20,7 +20,7 @@ var jumpUp = function(e) {
 
     scrollTop : $(target).parent().prev("section").offset().top - 200
 
-  }, 500);
+  }, 15000);
 
 }
 
@@ -78,6 +78,11 @@ var join = function(e) {
 
 $(function(){
 
+  //MAC에서 '산돌SD고딕'으로 한글 표시 -- check whether or not a valid func
+  if(navigator.appVersion.indexOf("Mac") != -1) {
+    $(html).css("%base-font-kr", "산돌SD고딕");
+  }
+
   //canvas : HTML5
   //old vers. IE에서 HTML5 지원 안되는데 이런 경우에 대한 처리 -> image 삽입 or polyfill?
   //src :  http://www.yjn.kr/bbs/board.php?bo_table=prog_html&wr_id=771
@@ -88,14 +93,15 @@ $(function(){
 
   pattern.canvas(document.getElementById("trianglify"));
 
-  //$(".container section").css("opacity", "0");
+  $("img.center_logo").css("margin-left", -$('img.center_logo').width()/2);
+  $(".vision").css("margin-left", -$('.vision').width()/2);
+
+  $(".people_dancing img:even").addClass("animation_dance").addClass("dance_property");
+  $(".people_dancing img:odd").addClass("animation_danceReverse").addClass("dance_property");
+
+  //$(".skyoon").addClass("animation_danceReverse");
 
   $(window).scroll(function(){
-    
-    //$(".container section").animate({
-      //opacity : "1"
-    //}, 20000);
-
     //src : www.ordinarycoder.com/jquery-fade-content-scroll
 
     $(".container section").each(function(){
@@ -122,11 +128,11 @@ $(function(){
     })
   });
 
-  $(".seeMore").bind("click", jump);
+  $(".scroll").bind("click", jump);
   $(".arrow").bind("click", jumpDown);
   $(".arrowReverse").bind("click", jumpUp);
   
-  $(".wrap-container .logo-text").bind("click", hero);
+  $(".global-nav-item .logo .banner_logo").bind("click", hero);
   $("ul.global-nav-list li:first").bind("click", team);
   $("ul.global-nav-list li:nth-child(2)").bind("click", environment);
   $("ul.global-nav-list li:nth-child(3)").bind("click", join);

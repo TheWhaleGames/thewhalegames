@@ -1,3 +1,10 @@
+// Font family
+/*$base-font-kr-mac: "산돌SD고딕";*/
+/*$base-font-kr-win: "나눔바른고딕";*/
+$base-font-kr : "나눔바른고딕";
+$base-font-en: "Arial";
+
+
 // Typography
 $base-font-family: $helvetica;
 $heading-font-family: $base-font-family;
@@ -16,7 +23,7 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$ci-primary: #b8252b;
+$ci-primary: #be1e2d;
 $battlecomics-primary-color: #9b63b5;
 $blue: #477dca;
 $dark-gray: #333;
