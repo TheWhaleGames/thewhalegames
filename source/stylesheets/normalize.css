@@ -8,6 +8,10 @@
  * Corrects `block` display not defined in IE 8/9.
  */
 
+html, body{
+  width: 100%;
+}
+
 article,
 aside,
 details,
@@ -135,8 +139,8 @@ dfn {
 
 /*ADDED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 em {
-  font-size : 1.4em;
-  font-weight : bold;
+  font-size : 1.3em;
+  font-weight : 900;
   font-style : normal;
 }
 

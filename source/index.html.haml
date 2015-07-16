@@ -17,100 +17,111 @@ members:
 .container
   %canvas#trianglify
   %section#company
-    .members
-      - current_page.data.members.each do |member|
-        = image_tag("members/#{member}.jpg", class: 'member')
-    %p
-      <em>2013년 6월</em>에 설립되었고, 대기업-게임회사-스타트업 등의 다양한 백그라운드를
-      가진 <em>#{current_page.data.members.count}명의 인재</em>들이 함께하고 있습니다.
+    = image_tag('roket.png', class: 'roket')
+    %p#found
+      <em>2013년 6월에 설립</em>
+    %p#content
+      대기업-게임회사-스타트업 등의<br> 다양한 백그라운드를 가진 #{current_page.data.members.count}명의 인재들이 함께하고 있습니다.
 
-    %button.arrow ▽
+  #bk_gradient
+    = image_tag('bulb.png', class: 'bulb');
+    %h1 
+      WORKS
+    %section#service
+      .content
+        = image_tag('BClogo.png', class: 'battle_comics')
+        %p
+          게임 전문 웹툰 서비스<br>
+          = link_to "http://battlecomics.co.kr" do
+            %em 배틀코믹스
+          <br>배틀코믹스는 현재<br> 약 <em>170여명의 작가</em>들이 작품을 연재 중이며,<br> <em>구글 스토어 평점 4.9</em>의 높은 평가를 받고 있습니다.
+      .phone
+        = image_tag('phone_L.png', class: 'L')
+        = image_tag('phone_F.png', class: 'F')
+        = image_tag('phone_R.png', class: 'R')
 
-    -#===========================================
 
-  %section#service
-    %button.arrowReverse △
-    = image_tag('battlecomics-logo.png')
-    %p
-      게임 전문 웹툰 서비스인
-      = link_to "http://battlecomics.co.kr" do
-        %em 배틀코믹스
-      를 서비스하고 있습니다.
-    = image_tag('battlecomics-app.png')
-    %p
-      배틀코믹스는 현재 약 <em>170여명의 작가</em>들이 작품을 연재 중이며, <em>구글 스토어 평점
-      4.9</em>의 높은 평가를 받고 있습니다.
-    %button.arrow ▽
-    -#===========================================
-
-  %section#vision
-    %button.arrowReverse △
-    = image_tag('china.png')
-    %p
-      <em>2015년</em> 중 예정된, <em>중국 서비스 런칭</em>을 시작으로 다양한 글로벌 지역에 진출을
-      준비 중입니다.
-    %button.arrow ▽
-    -#===========================================
+    %section#vision
+      = image_tag('chinaflag.png')
+      %p
+        %em 
+          2015년 중 중국서비스 진출
+      %p#content
+        2015년 중 예정된,<br>중국 서비스 런칭을 시작으로 다양한 글로벌 지역에 진출을 준비 중입니다.
+  #gradient
 
   %section#members 
-    %button.arrowReverse △
-    - current_page.data.members.each do |member|
-      %section{id: "#{member}"}
-        = partial "partials/members/#{member}"
-    %button.arrow ▽
-
-
-    -#===========================================
+    %h1 TEAM
+    .member
+      - current_page.data.members.each do |member|
+        = image_tag("members/#{member}.jpg", class: member)
+        -#= partial "partials/members/#{member}"
+    %h2 WHO WE ARE
+    %p
+      우리는 불가능한 확률을 가능하게 만들기 위해 뭉친 팀입니다.
+      우리는 일 좀 한다는 사람들이 모인 팀입니다.<br>
+      우리는 개개인이 자율적인 동시에 책임감 있는 팀입니다.
+      우리는 한번 물면 끝장을 보는 Grit을 갖고 있는 팀입니다.<br>
+      그리고, 우리는 반드시 세계적인 회사를 만들 것입니다.<br>
+      우리는 재미있는, 신나는 일을 하는 팀입니다.
+  %section#join_us
+    .group
+      .communication
+        %h1 커뮤니케이션
+        %p
+          혼자서는 아무것도 할 수 없습니다.<br>
+          우리는 공통의 목표를 위해<br> 
+          협업하고자 모였습니다.<br>
+          이를 위해 진솔하고 직접적이며 간결한,<br>
+          하지만<br>
+          배려있는 커뮤니케이션을 중요시합니다.
+      .responsibility
+        %h1 책임감
+        %p
+          사람과 시간은 항상 넉넉치 않습니다.<br>
+          어떠한 상황에서도 약속한 시간에,<br>
+          높은 완성도로 자신의 역할을 다하는<br>
+          책임감을 중요시 합니다.
+      .value
+        %h1 성과
+        %p
+          우리가 모인 근본적인 이유는<br> 
+          일을 하고 성과를 만들어내기 위함입니다.<br>
+          내가 지금 하고 있는 일이<br> 
+          왜 하는 것인지,<br>
+          그래서 어떤 목표를 위한 것인지 이해합니다.
 
   %section#environment
-    %button.arrowReverse △
+    %h1 근무 환경
+    .icon 
+      .time
+        = image_tag('clock.png')
+        %p
+          10시 출근입니다<br> 퇴근은 각자가<br> 자율적으로 정합니다.
+      .facility
+        = image_tag('health.png')
+        %p
+          헬스장, 샤워장,<br> 휴게실, 수면시설이<br> 완비되어 있습니다
+      .coffee
+        = image_tag('coffee.png')
+        %p
+          에스프레소 머신에서<br> 스타벅스 원두 커피가<br> 무한정 제공됩니다
+      .cookie
+        = image_tag('cookie.png')
+        %p
+          과일, 과자 등의 간식을<br> 무한정 먹을 수 있습니다
+      .employees
+        = image_tag('monitor.png')
+        %p
+          개발자/디자이너의 경우<br> PC와 모니터, 키보드 등의<br> 주변기기를
+          원하는대로<br> 맞춤형으로 제공합니다.
+    #map
+    %h2 서울특별시 서초구 남부순환로 289길 5 삼영빌딩 1층(The Whale Games)
     %p
       4호선과 2호선이 교차하는 교통의 요지, 사당역 인근에 사무실 위치
       (스마일게이트 벤쳐인큐베이팅 센터에 입주)
-    #map
-    %p
-      10시 출근입니다. 퇴근은 각자가 자율적으로 정합니다.
-    %p
-      헬스장, 샤워장, 휴게실, 수면시설이 완비되어 있습니다.
-    %p
-      에스프레소 머신에서 스타벅스 원두 커피가 무한정 제공됩니다.
-    %p
-      이외에 과일, 과자 등의 간식을 무한정 먹을 수 있습니다.
-    %p
-      특히, 개발자/디자이너의 경우 PC와 모니터, 키보드 등의 주변기기를
-      원하는대로 맞춤형으로 제공합니다.
-    %button.arrow ▽
-    -#===========================================
-
-  %section#join_us
-    %button.arrowReverse △
-    %h1 Who We Are
-    %p
-      우리는 불가능한 확률을 가능하게 만들기 위해 뭉친 팀입니다.
-      우리는 일 좀 한다는 사람들이 모인 팀입니다.
-      우리는 개개인이 자율적인 동시에 책임감 있는 팀입니다.
-      우리는 한번 물면 끝장을 보는 Grit을 갖고 있는 팀입니다.
-      그리고, 우리는 반드시 세계적인 회사를 만들 것입니다.
-      우리는 재미있는, 신나는 일을 하는 팀입니다.
-
-    %h1 Our Value
-    %h2 성과
-    %p
-      우리가 모인 근본적인 이유는 일을 하고 성과를 만들어내기 위함입니다.
-      내가 지금 하고 있는 일이 왜 하는 것인지, 그래서 어떤 목표를 위한 것인지
-      이해합니다
-
-    %h2 책임감
-    %p
-      사람과 시간은 항상 넉넉치 않습니다. 어떠한 상황에서도 약속한 시간에,
-      높은 완성도로 자신의 역할을 다하는 책임감을 중요시 합니다.
-
-    %h2 커뮤니케이션
-    %p
-      혼자서는 아무것도 할 수 없습니다. 우리는 공통의 목표를 위해 협업하고자
-      모였습니다. 이를 위해 진솔하고 직접적이며 간결한, 하지만 배려있는
-      커뮤니케이션을 중요시합니다.
-    -#===========================================
+    #button
+      CONTACT US
 
 :javascript
   var map = new GMaps({
