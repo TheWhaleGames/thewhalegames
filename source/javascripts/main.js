@@ -1,7 +1,3 @@
-/* reference :
- * http://stackoverflow.com/questions/9652944/jquery-page-scroll-to-different-page
- */
-
 var jump = function(e) {
   e.preventDefault();
 
@@ -76,18 +72,12 @@ var contact = function(e) {
   }, 1000);
 }
 
-//x_colors: ['#ffffff', '#ffffff', '#ffffff', '#f0f0f0', '#e3e3e3', '#d7d7d7', '#cacaca', '#bfbfbf', '#ababab', '#989898', '#8e8e8e', '#848484']
-
 $(function(){
 
   //MAC에서 '산돌SD고딕'으로 한글 표시 -- check whether or not a valid func
   if(navigator.appVersion.indexOf("Mac") != -1) {
     $(html).css("%base-font-kr", "산돌SD고딕");
   }
-
-  //canvas : HTML5
-  //old vers. IE에서 HTML5 지원 안되는데 이런 경우에 대한 처리 -> image 삽입 or polyfill?
-  //src :  http://www.yjn.kr/bbs/board.php?bo_table=prog_html&wr_id=771
 
   var pattern = Trianglify({
     width : $("canvas#trianglify").width(), 
@@ -169,36 +159,4 @@ $(function(){
       $($($(this).closest(".profile")).find("#example")).toggle();
     });
   });
-
-  /*
-   * source : jsfiddle.net/tcloninger/e5qad/
-   */
-
 });
-
-//$(window).scroll(function(){
-////src : www.ordinarycoder.com/jquery-fade-content-scroll
-
-//$(".container section").each(function(){
-//if(this.id == "members"){
-//$(".container section#members section").each(function(){
-//$(this).addClass("fadeInBlock");
-//});
-//}
-//else {
-//$(this).addClass("fadeInBlock");
-//}
-//});
-
-//$(".fadeInBlock").each(function(i){
-//var bottom_of_object = $(this).position().top + $(this).outerHeight();
-//var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-////adjust the added number to either have a delay of that the content starts fading a bit before you reach it
-//bottom_of_window = bottom_of_window + 200;
-
-//if(bottom_of_window > bottom_of_object) {
-//$(this).animate({'opacity' : '1'}, 1000);
-//}
-//})
-//});

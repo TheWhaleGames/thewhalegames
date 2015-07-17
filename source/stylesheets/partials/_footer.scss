@@ -12,14 +12,11 @@ footer {
 
   .wrap-container-footer {
     position: relative;
-
-    address {
-    display: inline-block;
-  }
-    
-
     padding: $base-spacing;
 
+    address {
+      display: inline-block;
+    }
     .contact {
       float: right;
     }
