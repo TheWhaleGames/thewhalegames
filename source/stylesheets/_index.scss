@@ -20,6 +20,18 @@
       z-index: 0;
     }
 
+    canvas#trianglify2 {
+      width: 100%;   
+
+
+      position: absolute;
+      bottom: -$base-spacing*4;
+      left: 0;
+
+      z-index: -1;
+    }
+
+
     section {
       margin-bottom : 20%;
     }
@@ -125,6 +137,10 @@
     }
 
     #members {
+      background: -webkit-linear-gradient(white, #d9e1e2); 
+      background: -o-linear-gradient(white, #d9e1e2); 
+      background: -moz-linear-gradient(white, #d9e1e2); 
+      background: linear-gradient(white, #d9e1e2); 
       h1, h2 {
         font-family: $base-font-en;
       }
@@ -155,65 +171,59 @@
     }
 
     #join_us {
-      margin-left: 0;
+      display: block;
+      height: 300px;
 
-      .group {
-        display: block;
-        width: 100%;
-        height: 380px;
-        position: relative;
+      text-align: center;
 
-        h1, p{
-          font-weight: 510;
-          color: white;
-          text-align: center;
-
-          margin: 0;
-          padding: 0;
-        }
-
-        h1 {
-          opacity: 0;
-          font-size: 1.2em;
-        margin-top: 185px;
-      }
-
-
-      .communication, .responsibility, .value {
-        display: inline-block;
-        position: absolute;
-        top: 0;
-
-        width: 380px;
+      div {
+        width: 20%;
         height: inherit;
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 40px;
 
-        background-color: #bbbbbb;
-
-        margin: 0 $base-spacing*2;
+        background-color: #bbb;
+        opacity: .7;
+        color: white;
       }
 
-      /*p {*/
-      /*opacity: 0;*/
-    /*}*/
+      p {
+        display: block;
+      }  
+
+      #head {
+        margin-top: 145px;
+      } 
+
+      #content {
+        opacity: 0;
+      }
 
       .communication {
-        float: left;
-        margin-left: -500px;
+        #content {
+          margin-top: -110px;
+
+        }
       }
+
       .responsibility {
-        left: 50%;
-        margin-left: -250px;
+        #content {
+          margin-top: -80px;
+        }
       }
+
       .value {
-        float: right;
-    }
-    }
+        #content {
+          margin-top: -100px;
+        }
 
-
+      }
     }
 
     #environment {
-      margin-bottom: 15%;
+      margin-bottom: $base-spacing *4;
+
       h1 {
         display: inline-block;
         color: #767676;
@@ -234,6 +244,7 @@
           margin: 0;
         }
       }
+
       #map {
         margin-left: 20%;
         margin-bottom: $base-spacing;
@@ -241,7 +252,7 @@
         height: 400px;
       }
 
-      #button {
+      #contact {
         height: 40px;
         width : 17%;
 
@@ -249,9 +260,9 @@
         font-weight: bold;
         padding-top: 5px;
 
-        position: relative;
-        top: $base-spacing*4;
-        left: 50%;
+        display: block;
+
+        margin: $base-spacing*2 auto 0 auto;
 
         border: 1px solid #808080;
         border-radius: 100px;
