@@ -15,13 +15,22 @@
         margin : 1% 1%;
         float : left;
       }
-
     }
+
+    .global-nav-move {
+      position: fixed;
+      right: $base-spacing * 2;
+      z-index: 2;
+      float: right;
+    }
+
     ul.global-nav-list {
+      display: inline-block;
       line-height : $heading-line-height;
-      position : absolute;
-      top : 2em;
-      right : 0;
+
+      /*position : relative;*/
+      /*top : 2em;*/
+      /*right : 0;*/
 
       li {
         font-size : 1.4em;
@@ -30,7 +39,17 @@
         margin-right : $base-spacing * 2;
         cursor: default;
       }
+    }
 
+    .slide_menu {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #4c4c4c;
+      border-radius: 100px;
+      background-color: #4c4c4c;
+
+      margin-right: $base-spacing * 2;
     }
   }
 }

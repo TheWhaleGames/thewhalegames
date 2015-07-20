@@ -68,25 +68,25 @@
 }
 =======
 @-webkit-keyframes dance {
-  0% { bottom : 1vh; }
-  50% { bottom: 7vh; } 
-  100% { bottom: 1vh; }
+  0% { bottom : 1%; }
+  50% { bottom: 7%; } 
+  100% { bottom: 1%; }
 }
 @keyframes dance {
-  0% { bottom :1vh; }
-  50% { bottom: 7vh; } 
-  100% { bottom: 1vh; }
+  0% { bottom :1%; }
+  50% { bottom: 7%; } 
+  100% { bottom: 1%; }
 }
 
 @-webkit-keyframes danceReverse {
-  0% { bottom : 7vh; }
-  50% { bottom: 1vh; }
-  100% { bottom: 7vh; }
+  0% { bottom : 7%; }
+  50% { bottom: 1%; }
+  100% { bottom: 7%; }
 }
 @keyframes danceReverse {
-  0% { bottom : 7vh; }
-  50% { bottom: 1vh; }
-  100% { bottom: 7vh; }
+  0% { bottom : 7%; }
+  50% { bottom: 1%; }
+  100% { bottom: 7%; }
 }
 
 .animation_dance {
@@ -101,8 +101,8 @@
 }
 
 .dance_property {
-  -webkit-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;

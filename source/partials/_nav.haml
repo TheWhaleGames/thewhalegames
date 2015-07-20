@@ -2,7 +2,10 @@
   %section.wrap-container
     %header.global-nav-item.logo
       = image_tag("../images/toplogo.png", class: 'banner_logo')
-    %ul.global-nav-list
-      %li.global-nav-item= "works"
-      %li.global-nav-item= "team"
-      %li.global-nav-item= "contact"
+    .global-nav-move
+      %ul.global-nav-list
+        %li.global-nav-item= "home"
+        %li.global-nav-item= "works"
+        %li.global-nav-item= "team"
+        %li.global-nav-item= "contact"
+      %button.slide_menu

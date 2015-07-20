@@ -1,7 +1,5 @@
 
 .hero {
-  height : 100vh;
-
   .gradient {
     height: 93vh;
     background: -webkit-linear-gradient($ci-primary, #ab4375);
@@ -9,73 +7,107 @@
     background: -moz-linear-gradient($ci-primary, #ab4375);
     background: linear-gradient($ci-primary, #ab4375);
   }
-
+  
   font-family: $base-font-kr;
   font-weight: lighter;
   font-size : $base-font-size/1.5;
   color: white;
-
+  
   text-align: center;
-
-  -webkit-align-items : center;
-  align-items : center;
-  -webkit-justify-content : center;
-  justify-content : center;
-
+  
+  /*-webkit-align-items : center;*/
+  /*align-items : center;*/
+  /*-webkit-justify-content : center;*/
+  /*justify-content : center;*/
+  
+  
   .wrap-container {
     height: inherit;
+    text-align: center;
+    
     img.center_logo {
+      width: 500px;
+      /*make things invisible upon start*/
+      /*opacity : 0;*/
+      
+      /*-webkit-animation-delay : 2s;*/
+      /*-moz-animation-delay : 2s;*/
+      /*animation-delay : 2s;*/
+      
       position: absolute;
+      top: 50%;
       left : 50%;
-      margin-top : 20vh;
-      width: 20%;
     }
-
+    
     .vision {
+      /*make things invisible upon start*/
+      /*opacity : 0;*/
+      
+      /*call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time*/
+      /*-webkit-animation : fadeIn ease-in 1;*/
+      /*-moz-animation : fadeIn ease-in 1;*/
+      /*animation : fadeIn ease-in 1;*/
+      
+      /*this makes sure that after animation is done we remain at the last keyframe value(opacity : 1)*/
+      /*-webkit-animation-fill-mode : forwards;*/
+      /*-moz-animation-fill-mode : forwards;*/
+      /*animation-fill-mode : forwards;*/
+      
+      /*-webkit-animation-duration : 1s;*/
+      /*-moz-animation-duration : 1s;*/
+      /*animation-duration : 1s;*/
+      
+      /*-webkit-animation-delay : 4s;*/
+      /*-moz-animation-delay : 4s;*/
+      /*animation-delay : 4s;*/
+      
+      display: block;
+      margin-top: $small-spacing;
+      
       position: absolute;
-      top : 43vh;
+      top: 50%;
       left: 50%;
-
+      
       @include media($medium-screen) {
-        font-size: 1.5em;
+        font-size: 1.8em;
       }
     }
-
+    
     .detail {
       position: absolute;
-      left: 50vw;
-      bottom: 0;
-
+      left: 50%;
+      bottom: 6%;
+      
       display: inline-block;
-
+      
       .scroll {
         font-size : 1.2em;
         margin-bottom : 0.2em;
-
+        
         position: relative;
-        bottom : 7.2vh;
+        bottom : 7.2%;
       }
-
+      
       img.scroll_img {
         position: relative;
-        bottom: 7vh;
-
-        height: 15vh;
+        bottom: 7%;  
+        
+        height: 15%;        
       }
-
+      
       .scroll:hover{
         cursor: default;
         color: lighten(yellow, 40);
       }
     }
-
+    
     .people_dancing {
       img {
         position: absolute;
-        bottom: 4vh;
+        bottom: 1%;
         width: 3%;
       } 
-
+      
       .skkwon {
         left: 9%;
       }
@@ -104,13 +136,14 @@
         left: 81%;
       }
     }
-
+    
     .deco_end {
       position: absolute;
       left: 0;
       bottom : 0;
-
-      height: 7vh;
+      z-index: 1;
+      
+      height: 7%;
       width: 100%;
       background-image: url('../../images/pattern01.png');
       background-repeat: repeat;

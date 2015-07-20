@@ -23,7 +23,6 @@
     canvas#trianglify2 {
       width: 100%;   
 
-
       position: absolute;
       bottom: -$base-spacing*4;
       left: 0;
@@ -177,7 +176,7 @@
       text-align: center;
 
       div {
-        width: 20%;
+        width: 25%;
         height: inherit;
         display: inline-block;
         vertical-align: top;
@@ -202,22 +201,20 @@
 
       .communication {
         #content {
-          margin-top: -110px;
-
+          margin-top: 0;
         }
       }
 
       .responsibility {
         #content {
-          margin-top: -80px;
+          margin-top: 0;
         }
       }
 
       .value {
         #content {
-          margin-top: -100px;
+          margin-top: 0;
         }
-
       }
     }
 
