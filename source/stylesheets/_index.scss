@@ -52,10 +52,10 @@
     #bk_gradient {
       width: 100%;
 
-      background: -webkit-linear-gradient(#9869b5, #64cabd); /*for safari 5.1 to 6.0*/
-      background: -o-linear-gradient(#9869b5, #64cabd); /*for opera 11.1 to 12.0*/
-      background: -moz-linear-gradient(#9869b5, #64cabd); /*for firefox 3.6 to 15*/
-      background: linear-gradient(#9869b5, #64cabd); /*default syntax*/
+      background: -webkit-linear-gradient(#9869b5, #64cabd);
+      background: -o-linear-gradient(#9869b5, #64cabd);
+      background: -moz-linear-gradient(#9869b5, #64cabd);
+      background: linear-gradient(#9869b5, #64cabd);
 
       color: white;
 
@@ -130,10 +130,10 @@
       height: 300px;
       margin-bottom: 20%;
 
-      background: -webkit-linear-gradient(#64cabd, #ffffff); /*for safari 5.1 to 6.0*/
-      background: -o-linear-gradient(#64cabd, #ffffff); /*for opera 11.1 to 12.0*/
-      background: -moz-linear-gradient(#64cabd, #ffffff); /*for firefox 3.6 to 15*/
-      background: linear-gradient(#64cabd, #ffffff); /*default syntax*/
+      background: -webkit-linear-gradient(#64cabd, #ffffff);
+      background: -o-linear-gradient(#64cabd, #ffffff);
+      background: -moz-linear-gradient(#64cabd, #ffffff);
+      background: linear-gradient(#64cabd, #ffffff);
     }
 
     #members {
@@ -270,42 +270,3 @@
     }
   }
 }
-
-/*.fadeInBlock {*/
-/*opacity : 0;*/
-  /*}*/
-
-/*section {*/
-/*margin : 25% 18.5%;*/
-/*width : 63%;*/
-
-/*display: block;*/
-/*clear: both;*/
-
-/*button {*/
-/*display : -webkit-flex;*/
-/*display :         flex;*/
-/*-webkit-align-items : center;*/
-/*align-items : center;*/
-/*-webkit-justify-content : center;*/
-/*justify-content : center;*/
-  /*}*/
-
-/*button.arrow { [>arrow down<]*/
-/*font-size : 1em;*/
-/*color : $medium-gray;*/
-/*background-color : white;*/
-  /*}*/
-
-/*button.arrowReverse { [>arrow up<]*/
-/*font-size : 1em;*/
-/*color : $medium-gray;*/
-/*background-color : white;*/
-  /*}*/
-  /*}*/
-
-/*section {*/
-/*width: 100%;*/
-
-/*display: block;*/
-/*clear: both;*/

@@ -1,14 +1,13 @@
-/*src : http://codepen.io/bluehaus/pen/EfGyi*/
 
 .hero {
   height : 100vh;
 
   .gradient {
     height: 93vh;
-    background: -webkit-linear-gradient($ci-primary, #ab4375); /*for safari 5.1 to 6.0*/
-    background: -o-linear-gradient($ci-primary, #ab4375); /*for opera 11.1 to 12.0*/
-    background: -moz-linear-gradient($ci-primary, #ab4375); /*for firefox 3.6 to 15*/
-    background: linear-gradient($ci-primary, #ab4375); /*default syntax*/
+    background: -webkit-linear-gradient($ci-primary, #ab4375);
+    background: -o-linear-gradient($ci-primary, #ab4375);
+    background: -moz-linear-gradient($ci-primary, #ab4375);
+    background: linear-gradient($ci-primary, #ab4375);
   }
 
   font-family: $base-font-kr;
@@ -23,47 +22,16 @@
   -webkit-justify-content : center;
   justify-content : center;
 
-  .wrap-container
-  {
+  .wrap-container {
     height: inherit;
     img.center_logo {
-      /*make things invisible upon start*/
-      /*opacity : 0;*/
-
-      /*-webkit-animation-delay : 2s;*/
-      /*-moz-animation-delay : 2s;*/
-      /*animation-delay : 2s;*/
-
       position: absolute;
       left : 50%;
-
       margin-top : 20vh;
-
       width: 20%;
     }
 
     .vision {
-      /*make things invisible upon start*/
-      /*opacity : 0;*/
-
-      /*call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time*/
-      /*-webkit-animation : fadeIn ease-in 1;*/
-      /*-moz-animation : fadeIn ease-in 1;*/
-      /*animation : fadeIn ease-in 1;*/
-
-      /*this makes sure that after animation is done we remain at the last keyframe value(opacity : 1)*/
-      /*-webkit-animation-fill-mode : forwards;*/
-      /*-moz-animation-fill-mode : forwards;*/
-      /*animation-fill-mode : forwards;*/
-
-      /*-webkit-animation-duration : 1s;*/
-      /*-moz-animation-duration : 1s;*/
-      /*animation-duration : 1s;*/
-
-      /*-webkit-animation-delay : 4s;*/
-      /*-moz-animation-delay : 4s;*/
-      /*animation-delay : 4s;*/
-
       position: absolute;
       top : 43vh;
       left: 50%;
@@ -81,27 +49,6 @@
       display: inline-block;
 
       .scroll {
-        /*make things invisible upon start*/
-        /*opacity : 0;*/
-
-        /*call our keyframe named fadeIn, use animation ease-in and repeat it only 1 time*/
-        /*-webkit-animation : fadeIn ease-in 1;*/
-        /*-moz-animation : fadeIn ease-in 1;*/
-        /*animation : fadeIn ease-in 1;*/
-
-        /*this makes sure that after animation is done we remain at the last keyframe value(opacity : 1)*/
-        /*-webkit-animation-fill-mode : forwards;*/
-        /*-moz-animation-fill-mode : forwards;*/
-        /*animation-fill-mode : forwards;*/
-
-        /*-webkit-animation-duration : 1s;*/
-        /*-moz-animation-duration : 1s;*/
-        /*animation-duration : 1s;*/
-
-        /*-webkit-animation-delay : 4.8s;*/
-        /*-moz-animation-delay : 4.8s;*/
-        /*animation-delay : 4.8s;*/
-        /*font-family : $base-font-en;*/
         font-size : 1.2em;
         margin-bottom : 0.2em;
 
@@ -111,9 +58,9 @@
 
       img.scroll_img {
         position: relative;
-        bottom: 7vh;  
+        bottom: 7vh;
 
-        height: 15vh;        
+        height: 15vh;
       }
 
       .scroll:hover{
@@ -167,6 +114,6 @@
       width: 100%;
       background-image: url('../../images/pattern01.png');
       background-repeat: repeat;
-    } 
+    }
   }
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*make keyframes that tell the start state and the end state of our object*/
 /*@-webkit-keyframes fadeIn { from {opacity : 0;} to {opacity : 1;}}*/
 /*@-moz-keyframes fadeIn {from {opacity : 0;} to {opacity : 1;}}*/
@@ -65,3 +66,48 @@
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
+=======
+@-webkit-keyframes dance {
+  0% { bottom : 1vh; }
+  50% { bottom: 7vh; } 
+  100% { bottom: 1vh; }
+}
+@keyframes dance {
+  0% { bottom :1vh; }
+  50% { bottom: 7vh; } 
+  100% { bottom: 1vh; }
+}
+
+@-webkit-keyframes danceReverse {
+  0% { bottom : 7vh; }
+  50% { bottom: 1vh; }
+  100% { bottom: 7vh; }
+}
+@keyframes danceReverse {
+  0% { bottom : 7vh; }
+  50% { bottom: 1vh; }
+  100% { bottom: 7vh; }
+}
+
+.animation_dance {
+  -webkit-animation-name: dance;
+  animation-name: dance;
+
+}
+
+.animation_danceReverse {
+  -webkit-animation-name: danceReverse;
+  animation-name: danceReverse;
+}
+
+.dance_property {
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+}
+>>>>>>> 805339dbb561efe0e5ba726fdb98b1fb7d7ac15d
