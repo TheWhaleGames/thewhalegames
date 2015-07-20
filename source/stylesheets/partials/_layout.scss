@@ -1,16 +1,7 @@
 .container {
   section {
-    /*@include media($medium-screen) {*/
-      /*@include span-columns(8);*/
-      /*@include shift(2);*/
-    /*}*/
   }
 
   font-family: $base-font-kr;
   font-size: 0.2em;
-
-  /*@include media($medium-screen) {*/
-    /*font-size: 1em;*/
-    /*padding: 0;*/
-  /*}*/
 }
