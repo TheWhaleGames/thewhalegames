@@ -20,9 +20,10 @@
       z-index: 0;
     }
 
-    canvas#trianglify2 {
+    #trianglify2 img{
       width: 100%;   
 
+      margin: 0;
       position: absolute;
       bottom: -$base-spacing*4;
       left: 0;
@@ -136,10 +137,6 @@
     }
 
     #members {
-      background: -webkit-linear-gradient(white, #d9e1e2); 
-      background: -o-linear-gradient(white, #d9e1e2); 
-      background: -moz-linear-gradient(white, #d9e1e2); 
-      background: linear-gradient(white, #d9e1e2); 
       h1, h2 {
         font-family: $base-font-en;
       }

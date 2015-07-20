@@ -50,14 +50,15 @@ members:
         2015년 중 예정된,<br>중국 서비스 런칭을 시작으로 다양한 글로벌 지역에 진출을 준비 중입니다.
   #gradient
   
-  %canvas#trianglify2 
+  #trianglify2 
+    = image_tag("trianglebg.jpg", class: 'trianglify2')
 
   %section#members 
     %h1 TEAM
     .member
       - current_page.data.members.each do |member|
         = image_tag("members/#{member}.jpg", class: member)
-        -#= partial "partials/members/#{member}"
+        //= partial "partials/members/#{member}"
     %h2 WHO WE ARE
     %p
       우리는 불가능한 확률을 가능하게 만들기 위해 뭉친 팀입니다.

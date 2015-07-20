@@ -1,0 +1,28 @@
+/*@import "eslee";*/
+/*@import "fred";*/
+/*@import "jhlim";*/
+/*@import "jwheo";*/
+/*@import "kyjung";*/
+/*@import "sbpark";*/
+/*@import "skkwon";*/
+/*@import "skyoon";*/
+/*@import "sybae";*/
+
+.profile{
+  #info {
+    display: inline-block;
+    float: left;
+  }
+
+  #blah_blah {
+    display: inline-block; 
+    float: right;
+
+    #content{
+      color: black;
+      font-size: 1em;
+    }
+  }
+
+}
+
