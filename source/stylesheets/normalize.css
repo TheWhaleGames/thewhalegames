@@ -137,11 +137,9 @@ dfn {
     font-style: italic;
 }
 
-/*ADDED!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 em {
-  font-size : 1.3em;
-  font-weight : 900;
   font-style : normal;
+  color: #ffd281;
 }
 
 /*
