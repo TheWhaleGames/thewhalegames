@@ -6,17 +6,16 @@
     background: -moz-linear-gradient($ci-primary, #ab4375);
     background: linear-gradient($ci-primary, #ab4375);
   }
-  
-  font-family: $base-font-kr;
+
   font-weight: lighter;
   font-size : $base-font-size/1.5;
   color: white;
-  
+
   text-align: center;
   .wrap-container {
     height: inherit;
     text-align: center;
-    
+
     img.center_logo {
       width: 500px;
       position: absolute;
@@ -28,11 +27,11 @@
       -ms-transform: translate(-50%, -100%);
       transform: translate(-50%, -100%);
     }
-    
+
     .vision {
       display: block;
       margin-top: $small-spacing;
-      
+
       position: absolute;
       top: 50%;
       left: 50%;
@@ -46,42 +45,42 @@
         font-size: 1.8em;
       }
     }
-    
+
     .detail {
       position: absolute;
       left: 50%;
       bottom: 6%;
-      
+
       display: inline-block;
-      
+
       .scroll {
         font-size : 1.2em;
         margin-bottom : 0.2em;
-        
+
         position: relative;
         bottom : 7.2%;
       }
-      
+
       img.scroll_img {
         position: relative;
-        bottom: 7%;  
-        
-        height: 15%;        
+        bottom: 7%;
+
+        height: 15%;
       }
-      
+
       .scroll:hover{
         cursor: default;
         color: lighten(yellow, 40);
       }
     }
-    
+
     .people_dancing {
       img {
         position: absolute;
         bottom: 1%;
         width: 3%;
-      } 
-      
+      }
+
       .skkwon {
         left: 9%;
       }
@@ -95,7 +94,7 @@
         left: 36%;
       }
       .skyoon {
-        left: 45%; 
+        left: 45%;
       }
       .eslee {
         left: 54%;
@@ -110,13 +109,13 @@
         left: 81%;
       }
     }
-    
+
     .deco_end {
       position: absolute;
       left: 0;
       bottom : 0;
       z-index: 1;
-      
+
       height: 7%;
       width: 100%;
       background-image: url('../../images/pattern01.png');
