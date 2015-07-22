@@ -1,7 +1,10 @@
 .profile
-  = image_tag('members/jhlim.jpg')
-  %h2.profile__name
-    임준홍
-    %small.profile__position Creator
-  %p
-    게임과 웹툰이 좋습니다
+  .wrap_left
+    = image_tag('members/jhlim.jpg', id: 'me')
+    %h3.profile__name
+      임준홍<br>
+      %small.profile__position Creator
+  .wrap_right
+    = image_tag('members_triangle.png', id: 'balloon')
+    %p#content
+      게임과 웹툰이 좋습니다

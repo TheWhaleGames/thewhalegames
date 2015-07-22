@@ -20,7 +20,7 @@ members:
     = image_tag('roket.png', class: 'roket')
     %p#found
       <em>2013년 6월에 설립</em>
-    %p#content
+    %p#company_content
       대기업-게임회사-스타트업 등의<br> 다양한 백그라운드를 가진 #{current_page.data.members.count}명의 인재들이 함께하고 있습니다.
 
   #bk_gradient
@@ -36,9 +36,9 @@ members:
             %em 배틀코믹스
           <br>배틀코믹스는 현재<br> 약 <em>170여명의 작가</em>들이 작품을 연재 중이며,<br> <em>구글 스토어 평점 4.9</em>의 높은 평가를 받고 있습니다.
       .phone
-        = image_tag('phone_L.png', class: 'L')
-        = image_tag('phone_F.png', class: 'F')
-        = image_tag('phone_R.png', class: 'R')
+        = image_tag('phone_R.png', class: 'phone R')
+        = image_tag('phone_F.png', class: 'phone F')
+        = image_tag('phone_L.png', class: 'phone L')
 
 
     %section#vision
@@ -46,7 +46,7 @@ members:
       %p
         %em 
           2015년 중 중국서비스 진출
-      %p#content
+      %p#vision_content
         2015년 중 예정된,<br>중국 서비스 런칭을 시작으로 다양한 글로벌 지역에 진출을 준비 중입니다.
   #gradient
   
@@ -58,7 +58,9 @@ members:
     .member
       - current_page.data.members.each do |member|
         = image_tag("members/#{member}.jpg", class: member)
-        //= partial "partials/members/#{member}"
+        %section{id: "#{member}"}
+          .black_overlay
+          = partial "partials/members/#{member}"
     %h2 WHO WE ARE
     %p
       우리는 불가능한 확률을 가능하게 만들기 위해 뭉친 팀입니다.
@@ -70,7 +72,7 @@ members:
   %section#join_us
     .communication
       %p#head 커뮤니케이션
-      %p#content
+      %p#join_content
         혼자서는 아무것도 할 수 없습니다.<br>
         우리는 공통의 목표를 위해<br> 
         협업하고자 모였습니다.<br>
@@ -79,19 +81,20 @@ members:
         배려있는 커뮤니케이션을 중요시합니다.
     .responsibility
       %p#head 책임감
-      %p#content
+      %p#join_content
         사람과 시간은 항상 넉넉치 않습니다.<br>
         어떠한 상황에서도 약속한 시간에,<br>
         높은 완성도로 자신의 역할을 다하는<br>
         책임감을 중요시 합니다.
     .value
       %p#head 성과
-      %p#content
+      %p#join_content
         우리가 모인 근본적인 이유는<br> 
         일을 하고 성과를 만들어내기 위함입니다.<br>
         내가 지금 하고 있는 일이<br> 
         왜 하는 것인지,<br>
-        그래서 어떤 목표를 위한 것인지 이해합니다.
+        그래서 어떤 목표를 위한 것인지<br>
+        이해합니다.
 
   %section#environment
     %h1 근무 환경

@@ -1,7 +1,10 @@
 .profile
-  = image_tag('members/sybae.jpg', alt: 'SYBAE')
-  %h2.profile__name
-    배승윤
-    %small.profile__position Manager
-  %p
-    게임 &amp; 웹툰= 내 인생 33년
+  .wrap_left
+    = image_tag('members/sybae.jpg', alt: 'SYBAE', id: 'me')
+    %h3.profile__name
+      배승윤<br>
+      %small.profile__position Manager
+  .wrap_right
+    = image_tag('members_triangle.png', id: 'balloon')
+    %p#content
+      게임 &amp; 웹툰= 내 인생 33년

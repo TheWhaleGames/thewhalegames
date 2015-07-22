@@ -1,10 +1,14 @@
 .profile
-  = image_tag('members/jwheo.jpg')
-  %h2.profile__name
-    허지웅
-    %small.profile__position CTO
-
-  %p
-    서울대학교에서 물리학을 전공한 이후로 물리와는 담을 쌓고 코딩을 하고 있습니다.
-    대표의 꼬드김에 넘어가 합류한 이후로 모름지기 사람은 친구를 잘 사귀어야 한다는
-    어른들의 말씀에 뼈저리게 공감하고 있습니다.
+  .wrap_left
+    = image_tag('members/jwheo.jpg', id: 'me')
+    %h3.profile__name
+      허지웅<br>
+      %small.profile__position CTO
+  .wrap_right
+    = image_tag('members_triangle.png', id: 'balloon')
+    %p#content
+      서울대학교에서 물리학을 전공한 이후로<br>
+      물리와는 담을 쌓고 코딩을 하고 있습니다.<br>
+      대표의 꼬드김에 넘어가 합류한 이후로<br>
+      모름지기 사람은 친구를 잘 사귀어야 한다는<br>
+      어른들의 말씀에 뼈저리게 공감하고 있습니다.

@@ -9,31 +9,11 @@
   100% { bottom: 1%; }
 }
 
-@-webkit-keyframes danceReverse {
-  0% { bottom : 7%; }
-  50% { bottom: 1%; }
-  100% { bottom: 7%; }
-}
-@keyframes danceReverse {
-  0% { bottom : 7%; }
-  50% { bottom: 1%; }
-  100% { bottom: 7%; }
-}
-
 .animation_dance {
   -webkit-animation-name: dance;
   animation-name: dance;
-
-}
-
-.animation_danceReverse {
-  -webkit-animation-name: danceReverse;
-  animation-name: danceReverse;
-}
-
-.dance_property {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
@@ -41,3 +21,44 @@
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
 }
+
+@-webkit-keyframes shake {
+  0% { 
+    -webkit-transform : rotate(10deg); 
+    -moz-transform : rotate(10deg); 
+    -ms-transform : rotate(10deg); 
+    transform : rotate(10deg); 
+  } 
+  100% {
+    -webkit-transform : rotate(-10deg); 
+    -moz-transform : rotate(-10deg); 
+    -ms-transform : rotate(-10deg); 
+    transform : rotate(-10deg); 
+  }
+}
+
+@keyframes shake {
+  0% { 
+    -webkit-transform : rotate(10deg); 
+    -moz-transform : rotate(10deg); 
+    -ms-transform : rotate(10deg); 
+    transform : rotate(10deg); 
+  } 
+  100% {
+    -webkit-transform : rotate(-10deg); 
+    -moz-transform : rotate(-10deg); 
+    -ms-transform : rotate(-10deg); 
+    transform : rotate(-10deg); 
+  }
+}
+
+.animation_shake {
+  -webkit-animation-name: shake;
+  animation-name: shake;
+   -webkit-animation-duration: 0.04s;
+  animation-duration: 0.04s;
+  -webkit-animation-iteration-count: 30;
+  animation-iteration-count: 30;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+} 

@@ -8,21 +8,14 @@
 /*@import "skyoon";*/
 /*@import "sybae";*/
 
-.profile{
-  #info {
-    display: inline-block;
-    float: left;
-  }
-
-  #blah_blah {
-    display: inline-block; 
-    float: right;
-
-    #content{
-      color: black;
-      font-size: 1em;
-    }
-  }
+.black_overlay {
+  display: none;
+  position: relative;
+  background-color: black;
+  z-index: 1001;
+  -webkit-opacity: 0.95;
+  -moz-opacity: 0.95;
+  opacity: .95;
+  filter: alpha(opacity=95);
 
 }
-
