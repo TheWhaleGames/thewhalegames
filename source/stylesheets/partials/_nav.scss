@@ -1,5 +1,4 @@
 .global-nav {
-
   .wrap-container {
     position : relative;
     top : 0;
@@ -10,7 +9,7 @@
       height : 4em;
 
       img.banner_logo {
-        width: 6%;
+        width: 170px;
         margin : 1% 1%;
         float : left;
       }
@@ -18,11 +17,12 @@
 
     .global-nav-move {
       position: fixed;
+      top: 0;
       right: 0;
       z-index: 2;
-      
+
       height: 70px;
-        
+
       float: right;
 
       ul.global-nav-list {
@@ -30,42 +30,43 @@
         position: relative;
         bottom: 28px;
 
-      li {
-        font-size : 1.4em;
-        display : inline;
-        margin-right : $base-spacing * 2;
-        cursor: default;
+        li {
+          font-size : 1.4em;
+          display : inline;
+          margin-right : $base-spacing * 2;
+          cursor: default;
+        }
       }
 
-      .moving_menu {
-        position: relative;
-        margin: 0 $base-spacing*2 0 $base-spacing;
-        display: inline-block;
-        width: 80px;
-        
+        .moving_menu {
+          position: relative;
+          margin: 0 $base-spacing 0 0;
+          display: inline-block;
+          width: 80px;
 
-        .slide_menu {
-          padding: 0;
-          width: inherit;
-          height: inherit;
-        }
 
-        #slide_bar {
-          position: absolute;
-          top : 23.5px;
-          left: 29.5px;
-          margin: 0;
-          padding: 0;
-          width: 23px;
+          .slide_menu {
+            padding: 0;
+            width: inherit;
+            height: inherit;
+          }
 
-          img.bar {
-            display: inline-block;
-            margin-left: 0.2px;
-            width: 3.5px;
-            height: 23px;
+          #slide_bar {
+            position: absolute;
+            top : 23.5px;
+            left: 29.5px;
+            margin: 0;
+            padding: 0;
+            width: 23px;
+
+            img.bar {
+              display: inline-block;
+              margin-left: 0.2px;
+              width: 3.5px;
+              height: 23px;
+            }
           }
         }
       }
     }
   }
-}

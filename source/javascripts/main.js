@@ -117,8 +117,8 @@ var scrollFunction = function(){
 
     if($("#slide_bar").css("left") <= "29.5px"){
       $("#slide_bar").css({
-        "top": "22px",
-        "left": "31px",
+        "top": "21px",
+        "left": "32px",
         "-webkit-transform" : "rotate(-90deg)",
         "-moz-transform" : "rotate(-90deg)",
         "transform" : "rotate(-90deg)"
