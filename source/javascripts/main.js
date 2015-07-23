@@ -23,7 +23,6 @@ var activate = {
     });
   },
 
-
   scrollToSection: function(){
     $(".scroll").bind("click", scrollFunction.scrollDown);
     $("ul.global-nav-list li:first").bind("click", scrollFunction.hero);
@@ -57,7 +56,6 @@ var activate = {
       $(this).bind("click", function(){
         var idName = "#" + $(this).attr('class');
 
-        //resolution of p#content: #skkwon | #{other_members}
         if(idName == "#skkwon") {
           var content_height= $("#example").outerHeight(true);
           $("#example").css({
@@ -73,7 +71,6 @@ var activate = {
           });
         }
 
-        //block display
         $(idName).css("display", "block");
         $(idName).children(".profile").css({
           "height" : $(window).height(),
@@ -87,40 +84,34 @@ var activate = {
           "display" : "block"
         });
 
+        /*when window resize, get new window height for the profiles*/
         $(window).resize(function(){
-
-          //resolution of p#content: #skkwon | #{other_members}
           if(idName == "#skkwon") {
             var content_height= $("#example").outerHeight(true);
             $("#example").css({
               "max-height": $(window).height(),
-              "display": "inline-block"
             });
           }
           else {
             var height = -$(this).height();
             $("p#content").css({
               "max-height": $(window).height(),
-              "display": "inline-block"
             });
           }
 
-          //block display
           $(idName).css("display", "block");
           $(idName).children(".profile").css({
             "height" : $(window).height(),
             "width" : 0.5*$(window).width(),
-            "display": "block"
           });
 
           $(idName).children(".black_overlay").css({
             "height" : $(window).height(),
             "width" : $(window).width(),
-            "display" : "block"
           });
         });
 
-        //block display none
+        /*block display none*/
         $(idName).children(".profile").bind("click", function(){
           $(idName).css("display", "none");
           $(this).css("display", "none");

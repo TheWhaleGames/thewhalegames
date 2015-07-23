@@ -46,6 +46,7 @@
   }
 
   .hero {
+    font-size: 0.9em;
     .wrap-container {
       img.center_logo {
         padding: 0 2%;
@@ -58,7 +59,7 @@
 
       .people_dancing {
         img{
-          width: 10%;
+          width: 8%;
 
           @media screen and (min-width: 500px) {
             width: 5%;

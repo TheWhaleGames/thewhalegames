@@ -9,9 +9,13 @@
 @import "partials/footer";
 @import "partials/hero";
 @import "partials/animation";
+@import "partials/members";
 
-@import "partials/members/members";
-
-@import 'index';
+@import 'indexs/index_company';
+@import 'indexs/index_service';
+@import 'indexs/index_vision';
+@import 'indexs/index_members';
+@import 'indexs/index_join_us';
+@import 'indexs/index_environment';
 
 @import "partials/media";

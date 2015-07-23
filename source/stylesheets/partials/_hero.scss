@@ -8,7 +8,7 @@
   }
 
   font-weight: lighter;
-  font-size : $base-font-size/1.5;
+  font-size: $base-font-size;
   color: white;
 
   text-align: center;
@@ -30,7 +30,7 @@
 
     .vision {
       margin-top: $small-spacing;
-      font-size: 2em;
+      font-size: 1.5em;
 
       position: absolute;
       top: 50%;
@@ -40,7 +40,7 @@
       -moz-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       transform: translateX(-50%);
-      
+
     }
 
     .detail {
