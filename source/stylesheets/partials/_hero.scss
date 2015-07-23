@@ -29,8 +29,8 @@
     }
 
     .vision {
-      display: block;
       margin-top: $small-spacing;
+      font-size: 2em;
 
       position: absolute;
       top: 50%;
@@ -41,31 +41,16 @@
       -ms-transform: translateX(-50%);
       transform: translateX(-50%);
       
-      @include media($medium-screen) {
-        font-size: 1.8em;
-      }
     }
 
     .detail {
-      position: absolute;
-      left: 50%;
-      bottom: 6%;
-
-      display: inline-block;
+      -webkit-transform: translateY(-100%);
+      -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      transform: translateY(-100%);
 
       .scroll {
-        font-size : 1.2em;
-        margin-bottom : 0.2em;
-
-        position: relative;
-        bottom : 7.2%;
-      }
-
-      img.scroll_img {
-        position: relative;
-        bottom: 7%;
-
-        height: 15%;
+        margin-bottom: $small-spacing/2;
       }
 
       .scroll:hover{

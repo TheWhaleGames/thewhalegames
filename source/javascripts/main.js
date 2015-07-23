@@ -87,6 +87,39 @@ var activate = {
           "display" : "block"
         });
 
+        $(window).resize(function(){
+
+          //resolution of p#content: #skkwon | #{other_members}
+          if(idName == "#skkwon") {
+            var content_height= $("#example").outerHeight(true);
+            $("#example").css({
+              "max-height": $(window).height(),
+              "display": "inline-block"
+            });
+          }
+          else {
+            var height = -$(this).height();
+            $("p#content").css({
+              "max-height": $(window).height(),
+              "display": "inline-block"
+            });
+          }
+
+          //block display
+          $(idName).css("display", "block");
+          $(idName).children(".profile").css({
+            "height" : $(window).height(),
+            "width" : 0.5*$(window).width(),
+            "display": "block"
+          });
+
+          $(idName).children(".black_overlay").css({
+            "height" : $(window).height(),
+            "width" : $(window).width(),
+            "display" : "block"
+          });
+        });
+
         //block display none
         $(idName).children(".profile").bind("click", function(){
           $(idName).css("display", "none");
@@ -103,8 +136,6 @@ var activate = {
           $("#example").css("display", "none");
           $("p#content").css("display", "none");
         });
-
-        
       });
     });
   }
@@ -195,15 +226,22 @@ var draw_triangle = {
   },
 
   drawSecond: function() {
-    var img_height =  $("#gradient").outerHeight(true) + $("#members").outerHeight(true) + $("#join_us").outerHeight(true) + $("#environment").outerHeight();
+    $(window).load(function(){
+      var img_height =  $("#members").outerHeight(true) + $("#join_us").outerHeight(true) + $("#environment").outerHeight(true);
 
-    $("#trianglify2 img").css("height", img_height);
+      console.log($("#members").outerHeight(true));
+      console.log($("#join_us").outerHeight(true));
+      console.log($("#environment").outerHeight(true));
+      console.log(img_height);
+
+      $("#trianglify2 img").css("height", img_height);
+    });
   }
 }
 
 $(function(){
-
   $(".hero").css("height", $(window).height());
+
   $(window).resize(function(){
     $(".hero").css("height", $(window).height());
   });
@@ -214,13 +252,16 @@ $(function(){
   activate.dance();
   activate.scrollToSection();
   activate.hoverEffect();
-  activate.memberProfile();
+
+  if($(window).width() >= 1024) {
+    activate.memberProfile();
+  }
 
   var heroHeight = $(".hero").height();
   var gradientTop = $("#bk_gradient").offset().top;
   var gradientBottom = gradientTop + $("#bk_gradient").position().top;
-  $(window).scroll( function(){
 
+  $(window).scroll( function(){
     if($(window).scrollTop() > heroHeight){
       $("li.global-nav-item").css("color", "black");
 
