@@ -30,36 +30,38 @@ var activate = {
     $("ul.global-nav-list li:nth-child(3)").bind("click", scrollFunction.team);
     $("ul.global-nav-list li:nth-child(4)").bind("click", scrollFunction.contact);
 
-    var count = 0;
-    $(".moving_menu").click(function(){
-      $("#hamburger").toggleClass("active");
+    if($(window).width() >= 1024){
+      var count = 0;
+      $(".moving_menu").click(function(){
+        $("#hamburger").toggleClass("active");
 
 
-      if(count%2 == 0) {
-        $("ul").removeClass("animation_slideOut").addClass("animation_slideIn");
+        if(count%2 == 0) {
+          $("ul").removeClass("animation_slideOut").addClass("animation_slideIn");
 
-        $($("ul li").get().reverse()).each(function(index){
-          var child = $(this);
+          $($("ul li").get().reverse()).each(function(index){
+            var child = $(this);
 
-          setTimeout(function(){
-            child.css("opacity", "0");
-          }, index*175);
-        });
-      }
-      else {
-        $("ul").removeClass("animation_slideIn").addClass("animation_slideOut");
+            setTimeout(function(){
+              child.css("opacity", "0");
+            }, index*175);
+          });
+        }
+        else {
+          $("ul").removeClass("animation_slideIn").addClass("animation_slideOut");
 
-        $("ul li").each(function(index){
-          var child = $(this) ;
+          $("ul li").each(function(index){
+            var child = $(this) ;
 
-          setTimeout(function(){
-            child.css("opacity", "1");
-          }, index*170);
-        });
+            setTimeout(function(){
+              child.css("opacity", "1");
+            }, index*170);
+          });
 
-      }
-      count++;
-    });
+        }
+        count++;
+      });
+    }
   },
 
   hoverEffect: function(){
@@ -171,7 +173,6 @@ var activate = {
       if(scroll > heroHeight){
         $("li.global-nav-item").css("color", "black");
 
-
         if(scroll > gradientTop && scroll < gradientBottom){
           $("li.global-nav-item").css("color", "white");
           $("#service").animate({
@@ -185,5 +186,4 @@ var activate = {
       }
     });
   }
-
 }

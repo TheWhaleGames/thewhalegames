@@ -47,7 +47,7 @@
     }
   }
 
-  #gradient {
+  #bk_gradient_ending {
     height: 300px;
     margin-bottom: 20%;
 
@@ -55,12 +55,10 @@
     background: -o-linear-gradient(#64cabd, #ffffff); 
     background: -moz-linear-gradient(#64cabd, #ffffff); 
     background: linear-gradient(#64cabd, #ffffff); 
-  }
+  } 
 
   #trianglify2 {
     img{
-      width: 100%;
-      margin: 0;
       position: absolute;
       top: 0;
       left: 0;

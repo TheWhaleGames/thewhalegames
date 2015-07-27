@@ -14,10 +14,11 @@ var draw_triangle = {
   },
 
   drawSecond: function() {
-    $(window).load(function(){
+    $(window).on('load resize', function(){
       var img_height =  $("#members").outerHeight(true) + $("#join_us").outerHeight(true) + $("#environment").outerHeight(true);
-
+      
       $("#trianglify2 img").css("height", img_height);
+      $("#trianglify2 img").css("width", $("#members").outerWidth(true));
     });
   }
 }

@@ -1,10 +1,6 @@
 $(function(){
   $(".hero").css("height", $(window).height());
 
-  $(window).resize(function(){
-    $(".hero").css("height", $(window).height());
-  });
-
   draw_triangle.drawFirst();
   draw_triangle.drawSecond(); 
 
@@ -13,7 +9,11 @@ $(function(){
   activate.hoverEffect();
   activate.menuColorChange();
 
-  /*resize memberProfile screen when window resize*/
+  if($(window).resize()){
+    $(".hero").css("height", $(window).height());
+  }
+
+  /*memberProfile possible onely when window width is over 1024px*/
   if($(window).width() >= 1024) {
     activate.memberProfile();
   }
