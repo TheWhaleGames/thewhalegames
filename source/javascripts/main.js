@@ -29,7 +29,37 @@ var activate = {
     $("ul.global-nav-list li:nth-child(2)").bind("click", scrollFunction.works);
     $("ul.global-nav-list li:nth-child(3)").bind("click", scrollFunction.team);
     $("ul.global-nav-list li:nth-child(4)").bind("click", scrollFunction.contact);
-    $(".moving_menu").bind("click", scrollFunction.slide);
+
+    var count = 0;
+    $(".moving_menu").click(function(){
+      $("#hamburger").toggleClass("active");
+
+
+      if(count%2 == 0) {
+        $("ul").removeClass("animation_slideOut").addClass("animation_slideIn");
+
+        $($("ul li").get().reverse()).each(function(index){
+          var child = $(this);
+
+          setTimeout(function(){
+            child.css("opacity", "0");
+          }, index*170);
+        });
+      }
+      else {
+        $("ul").removeClass("animation_slideIn").addClass("animation_slideOut");
+
+        $("ul li").each(function(index){
+          var child = $(this) ;
+
+          setTimeout(function(){
+            child.css("opacity", "1");
+          }, index*180);
+        });
+
+      }
+      count++;
+    });
   },
 
   hoverEffect: function(){
@@ -133,30 +163,6 @@ var activate = {
 }
 
 var scrollFunction = function(){
-
-  var slide = function(){
-    $("ul").toggle("blind");
-
-    if($("#slide_bar").css("left") <= "29.5px"){
-      $("#slide_bar").css({
-        "top": "21px",
-        "left": "32px",
-        "-webkit-transform" : "rotate(-90deg)",
-        "-moz-transform" : "rotate(-90deg)",
-        "transform" : "rotate(-90deg)"
-      });
-    }
-    else {
-      $("#slide_bar").css({
-        "top": "23.5px",
-        "left": "29.5px",
-        "-webkit-transform" : "rotate(0deg)",
-        "-moz-transform" : "rotate(0deg)",
-        "transform" : "rotate(0deg)"
-      });
-    }
-  }
-
   var scrollDown = function() {
     var jumpHeight = $("header.hero").height() + $(".deco_end").height();
 
@@ -187,12 +193,11 @@ var scrollFunction = function(){
 
   var jump2contact = function(){
     $('html, body').animate({
-      scrollTop : $(".container section#environment #contact").offset().top
+      scrollTop : $("#contact").offset().top
     }, 1000);
   }
 
   return {
-    slide: slide,
     scrollDown: scrollDown,
     hero: jump2hero,
     works: jump2works,
@@ -219,11 +224,6 @@ var draw_triangle = {
   drawSecond: function() {
     $(window).load(function(){
       var img_height =  $("#members").outerHeight(true) + $("#join_us").outerHeight(true) + $("#environment").outerHeight(true);
-
-      console.log($("#members").outerHeight(true));
-      console.log($("#join_us").outerHeight(true));
-      console.log($("#environment").outerHeight(true));
-      console.log(img_height);
 
       $("#trianglify2 img").css("height", img_height);
     });
@@ -252,11 +252,17 @@ $(function(){
   var gradientTop = $("#bk_gradient").offset().top;
   var gradientBottom = gradientTop + $("#bk_gradient").position().top;
 
+  var left = $("li:nth-child(4)").position().left;
+  console.log(left);
+
+
   $(window).scroll( function(){
-    if($(window).scrollTop() > heroHeight){
+    var scroll = $(window).scrollTop();
+    if(scroll > heroHeight){
       $("li.global-nav-item").css("color", "black");
 
-      if($(window).scrollTop() > gradientTop && $(window).scrollTop() < gradientBottom){
+
+      if(scroll > gradientTop && scroll < gradientBottom){
         $("li.global-nav-item").css("color", "white");
         $("#service").animate({
           opacity: "1",
@@ -268,5 +274,4 @@ $(function(){
       $("li.global-nav-item").css("color", "white");
     }
   });
-
 });

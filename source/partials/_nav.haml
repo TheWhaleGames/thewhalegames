@@ -9,9 +9,6 @@
         %li.global-nav-item= "team"
         %li.global-nav-item= "contact"
       .moving_menu
-        .slide_menu
-          = image_tag("../images/balloon.png", class: 'balloon')
-        %a#slide_bar
-          = image_tag("../images/slide.png", class: 'bar one')
-          = image_tag("../images/slide.png", class: 'bar two')
-          = image_tag("../images/slide.png", class: 'bar three')
+        = image_tag("../images/balloon.png", class: 'balloon_menu')
+        %a#hamburger
+          %span

@@ -13,13 +13,17 @@
       position: fixed;
       right: 0;
       z-index: 2;
-      
+
       ul.global-nav-list {
         display: inline-block;
+        position: relative;
+        z-index: 2;
 
         li {
           display: inline;
           margin-right: $base-spacing;
+
+          cursor: default;
         }
       }
 
@@ -28,29 +32,75 @@
         vertical-align: middle;
 
         width: 80px;
+        height: 70px;
 
         position: relative;
+        z-index: 3;
 
-        .slide_menu {
+        .balloon_menu {
           padding: 0;
-          width: inherit;
-          height: inherit;
+          width: 80px;
+          height: 70px;
+
+          position: absolute;
+          top: 50%;
+          z-index: 4;
+
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
         }
 
-        #slide_bar {
-          position: absolute;
-          top : 23.5px;
-          left: 29.5px;
-          margin: 0;
+        #hamburger span {
+          cursor: pointer;
           padding: 0;
-          width: 23px;
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 5;
 
-          img.bar {
-            display: inline-block;
-            margin-left: 0.2px;
-            width: 3.5px;
-            height: 23px;
-          }
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+
+        #hamburger span, #hamburger span:before, #hamburger span:after {
+          cursor: pointer;
+          height: 23px;
+          width: 3.5px;
+          position: absolute;
+          background: white;
+          display: block;
+          content: '';
+
+        }
+
+        #hamburger span:before {
+          left: -9px;
+        }
+        #hamburger span:after {
+          right: -9px;
+        }
+
+        #hamburger span, #hamburger span:before, #hamburger span:after {
+          transition: all 500ms ease-in-out;
+        }
+
+        #hamburger.active span {
+          left: 50%;
+          -webkit-transform-origin: 50% 0;
+          -moz-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+          -o-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+          -webkit-transform: rotate(-90deg) translateY(-50%);
+          -moz-transform: rotate(-90deg) translateY(-50%);
+          -ms-transform: rotate(-90deg) translateY(-50%);
+          -o-transform: rotate(-90deg) translateY(-50%);
+          transform: rotate(-90deg) translateY(-50%);
         }
       }
     }

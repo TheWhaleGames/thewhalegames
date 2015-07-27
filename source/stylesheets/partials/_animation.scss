@@ -55,10 +55,108 @@
 .animation_shake {
   -webkit-animation-name: shake;
   animation-name: shake;
-   -webkit-animation-duration: 0.04s;
+  -webkit-animation-duration: 0.04s;
   animation-duration: 0.04s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
 } 
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100%{
+    -webkit-transform: translateX(90%);
+    -moz-transform: translateX(90%);
+    -ms-transform: translateX(90%);
+    transform: translateX(90%);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100%{
+    -webkit-transform: translateX(90%);
+    -moz-transform: translateX(90%);
+    -ms-transform: translateX(90%);
+    transform: translateX(90%);
+  }
+}
+
+@-webkit-keyframes slideOut{
+  0% {
+    -webkit-transform: translateX(90%);
+    -moz-transform: translateX(90%);
+    -ms-transform: translateX(90%);
+    transform: translateX(90%);
+  }
+  100%{
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideout {
+  0% {
+    -webkit-transform: translateX(90%);
+    -moz-transform: translateX(90%);
+    -ms-transform: translateX(90%);
+    transform: translateX(90%);
+  }
+  100%{
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+.animation_slideIn {
+  -webkit-animation-name: slideIn;
+  animation-name: slideIn;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+  -webkit-animation-fill-mode:forwards; 
+  -moz-animation-fill-mode:forwards; 
+  -o-animation-fill-mode:forwards; 
+  -ms-animation-fill-mode:forwards; 
+  animation-fill-mode:forwards; 
+}
+
+.animation_slideOut {
+  -webkit-animation-name: slideOut;
+  animation-name: slideOut;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+
+  -webkit-animation-fill-mode:forwards; 
+  -moz-animation-fill-mode:forwards; 
+  -o-animation-fill-mode:forwards; 
+  -ms-animation-fill-mode:forwards; 
+  animation-fill-mode:forwards; 
+}
