@@ -29,7 +29,7 @@ var scrollFunction = function(){
 
   var jump2contact = function(){
     $('html, body').animate({
-      scrollTop : $("#contact").offset().top
+      scrollTop : $("#map").offset().top
     }, 1000);
   }
 

@@ -30,13 +30,20 @@
       }
 
       .global-nav-move {
+        width: 100%;
+        display: block;
 
         ul.global-nav-list {
+          display: inline-block;
           height: inherit;
+          padding: 0;
 
           li {
             margin-right: 1em;
           }
+        }
+        img {
+          display: inline-block; 
         }
       }
     }
@@ -100,9 +107,11 @@
       #members {
         #trianglify2 {
           img {
+            width: 100%;
             left: -2%;
           }
         }
+
         .member {
           section{
             .black_overlay {
