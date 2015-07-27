@@ -1,17 +1,6 @@
 #members {
   position: relative;
 
-  #trianglify2 {
-    img{
-      width: 100%;
-      margin: 0;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-  }
-
   h1 {
     margin-bottom: $base-spacing * 2;
     color: black;
@@ -26,11 +15,13 @@
     margin-top : $base-spacing;
     border-bottom: 4px solid #a32c2c;
   }
+
   img {
     width: 5%;
     display: inline-block;
     margin-right: 2em;
   }
+
   p {
     margin-top: $small-spacing;
   }
