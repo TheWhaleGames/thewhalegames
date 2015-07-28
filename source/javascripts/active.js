@@ -10,6 +10,8 @@ var activate = {
       var count = 0;
 
       $(this).click(function(){
+        console.log('clicked');
+
         count++;
 
         if(count%2 == 1) {
@@ -69,14 +71,20 @@ var activate = {
       $(this).mouseenter(function(){
         var target = $(this);
 
-        target.css("background-color", "#a32c2c");
+        target.css({
+          "background-color": "#a32c2c",
+          "opacity": "1"
+        });
         target.children("#head").css("opacity", "0");
         target.children("#join_content").css("opacity", "1");
       })
       .mouseleave(function(){
         var target = $(this);
 
-        target.css("background-color", "#bbb");
+        target.css({
+          "background-color" : "#bbb",
+          "opacity": ".7"
+        });
         target.children("#head").css("opacity", "1");
         target.children("#join_content").css("opacity", "0");
       })

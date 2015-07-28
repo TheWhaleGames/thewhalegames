@@ -18,7 +18,7 @@ members:
   %canvas#trianglify
   %section#company
     = image_tag('roket.png', class: 'roket')
-    %p#found
+    %h1#found
       2013년 6월에 설립
     %p#company_content
       대기업-게임회사-스타트업 등의<br> 다양한 백그라운드를 가진 #{current_page.data.members.count}명의 인재들이 함께하고 있습니다.
@@ -34,7 +34,7 @@ members:
           게임 전문 웹툰 서비스<br>
           = link_to "http://battlecomics.co.kr" do
             %em#battlecomics 배틀코믹스
-          <br>배틀코믹스는 현재<br> 약 <em>170여명의 작가</em>들이 작품을 연재 중이며,<br> <em>구글 스토어 평점 4.9</em>의 높은 평가를 받고 있습니다.
+          <br>배틀코믹스는 현재<br> 약 <span style = "color: #ffd281">170여명의 작가</span>들이 작품을 연재 중이며,<br> <span style = "color: #ffd281">구글 스토어 평점 4.9</span>의 높은 평가를 받고 있습니다.
       .phone
         = image_tag('phone_R.png', class: 'phone R')
         = image_tag('phone_F.png', class: 'phone F')
@@ -96,7 +96,7 @@ members:
         이해합니다.
 
   %section#environment
-    %h1 근무 환경
+    %h2 근무 환경
     .icon 
       .time
         = image_tag('clock.png')
@@ -120,7 +120,7 @@ members:
           개발자/디자이너의 경우<br> PC와 모니터, 키보드 등의<br> 주변기기를
           원하는대로<br> 맞춤형으로 제공합니다.
     #map
-    %h2 서울특별시 서초구 남부순환로 289길 5 삼영빌딩 1층(The Whale Games)
+    %h3 서울특별시 서초구 남부순환로 289길 5 삼영빌딩 1층(The Whale Games)
     %p
       4호선과 2호선이 교차하는 교통의 요지, 사당역 인근에 사무실 위치
       (스마일게이트 벤쳐인큐베이팅 센터에 입주)

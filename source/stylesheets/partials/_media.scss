@@ -3,10 +3,6 @@
     width: 100%;
   }
 
-  #trianglify2 img {
-    width: 100%;
-  }
-
   .class {
     margin: 0 auto;
   }
@@ -15,11 +11,16 @@
     font-size: 1em;
   }
 
-  h2, h3 { 
-    font-size: 0.9em; 
+  h2, 
+  h3, 
+  h4,
+  h5,
+  h6 { 
+    font-size: 0.8em; 
   }
+
   p {
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   .global-nav {
@@ -34,26 +35,13 @@
       }
 
       .global-nav-move {
-        position: fixed;
-        right: 20px;
+        display: none;
 
-        ul.global-nav-list {
-          display: block;
-          padding: 0;
-
-          li {
-            margin-right: 1em;
-          }
-        }
-        img,#hamburger {
-          display: none; 
-        }
       }
     }
   }
 
   .hero {
-    font-size: 0.9em;
     .wrap-container {
       img.center_logo {
         padding: 0 2%;
@@ -61,7 +49,6 @@
 
       .vision {
         width: 80%;
-        font-size: 1em;
       }
 
       .people_dancing {
@@ -73,6 +60,10 @@
           }
         }
       }
+
+      .detail {
+        display: none;
+      }
     }
   }
 
@@ -81,7 +72,7 @@
       section {
         width: 96%;
         margin-bottom: 7%;
-        margin-left: 2%;
+        margin-left: 2.3%;
       }
 
       #bk_gradient {
@@ -103,8 +94,6 @@
       }
 
       #members {
-        margin: 0;
-
         .member {
           section{
             .black_overlay {
@@ -141,13 +130,12 @@
         margin-bottom: 0;
 
         #map {
-          width: 96%;
+          width: 100%;
           margin: 0;
         }
 
         #contact {
           margin: $base-spacing 0;
-          font-size: 0.7em;
         }
       }
 

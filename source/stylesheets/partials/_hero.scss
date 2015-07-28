@@ -1,14 +1,5 @@
 .hero {
-  .gradient {
-    height: 97%;
-    background: -webkit-linear-gradient($ci-primary, #ab4375);
-    background: -o-linear-gradient($ci-primary, #ab4375);
-    background: -moz-linear-gradient($ci-primary, #ab4375);
-    background: linear-gradient($ci-primary, #ab4375);
-  }
-
   font-weight: lighter;
-  font-size: $base-font-size;
   color: white;
 
   text-align: center;
@@ -16,6 +7,7 @@
   .wrap-container {
     height: inherit;
     text-align: center;
+    position: relative;
 
     img.center_logo {
       width: 500px;
@@ -29,10 +21,7 @@
       transform: translate(-50%, -100%);
     }
 
-    .vision {
-      margin-top: $small-spacing;
-      font-size: 1.5em;
-
+    p.vision {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -41,7 +30,6 @@
       -moz-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
       transform: translateX(-50%);
-
     }
 
     .detail {

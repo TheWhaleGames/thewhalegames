@@ -4,15 +4,11 @@
   h1 {
     margin-bottom: $base-spacing * 2;
     color: black;
-    font-weight: 550;
-    font-size: 2em;
   }
 
   h2 {
     display: inline-block;
     color: #3d4d51;
-    font-weight : 530;
-    margin-top : $base-spacing;
     border-bottom: 4px solid #a32c2c;
   }
 
@@ -20,9 +16,5 @@
     width: 5%;
     display: inline-block;
     margin-right: 2em;
-  }
-
-  p {
-    margin-top: $small-spacing;
   }
 }

@@ -1,9 +1,14 @@
-
 $(function(){
   $(".hero").css("height", $(window).height());
 
+  var resizing;
+
   if($(window).resize()){
-    $(".hero").css("height", $(window).height());
+    clearTimeout(resizing);
+
+    resizing = setTimeout(function(){
+      $(".hero").css("height", $(window).height());
+    }, 500);
   }
 
   draw_triangle.drawFirst();

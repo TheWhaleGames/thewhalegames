@@ -1,8 +1,6 @@
 #join_us {
   display: block;
-
   text-align: center;
-
   position: relative;
 
   div {
@@ -13,14 +11,13 @@
     height: 300px;
     margin: 40px;
 
+    background-color: #bbb;
+    opacity: .7;
+
     -webkit-transform: translateY(-40px);
     -moz-transform: translateY(-40px);
     -ms-transform: translateY(-40px);
     transform: translateY(-40px);
-
-
-    background-color: #bbb;
-    opacity: .7;
 
     color: white;
   }
@@ -57,7 +54,6 @@
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
     }
-
   }
 
   .responsibility {

@@ -1,8 +1,15 @@
+.hero{
+  .gradient {
+    height: 97%;
+    background: -webkit-linear-gradient($ci-primary, #ab4375);
+    background: -o-linear-gradient($ci-primary, #ab4375);
+    background: -moz-linear-gradient($ci-primary, #ab4375);
+    background: linear-gradient($ci-primary, #ab4375);
+  }
+}
+
 .container {
   width: 100%;
-
-  font-size : 1.2em;
-
   text-align : center;
   position: relative;
   padding-left: 0;
@@ -24,27 +31,10 @@
   }
 
   #bk_gradient {
-    width: 100%;
-
     background: -webkit-linear-gradient(#9869b5, #64cabd);
     background: -o-linear-gradient(#9869b5, #64cabd); 
     background: -moz-linear-gradient(#9869b5, #64cabd); 
     background: linear-gradient(#9869b5, #64cabd);
-
-    color: white;
-
-    img.bulb {
-      display: inline-block;
-      position: relative;
-      top: -165px;
-    }
-
-    h1 {
-      position: relative;
-      top: -150px;
-      font-weight: normal;
-      font-size: 1.6em;
-    }
   }
 
   #bk_gradient_ending {
