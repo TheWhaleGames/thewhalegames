@@ -2,7 +2,6 @@ $(function(){
   $(".hero").css("height", $(window).height());
 
   var resizing;
-
   if($(window).resize()){
     clearTimeout(resizing);
 
@@ -14,14 +13,13 @@ $(function(){
   draw_triangle.drawFirst();
   draw_triangle.drawSecond(); 
 
-  activate.dance();
-  activate.scrollToSection();
-  activate.hoverEffect();
-  activate.menuColorChange();
+  activateMenu.scrollToSection();
+  activateMenu.menuColorChange();
 
+  activateEffect.dance();
+  activateEffect.hoverEffect();
 
-  /*memberProfile possible onely when window width is over 1024px*/
   if($(window).width() >= 1024) {
-    activate.memberProfile();
+    activateEffect.memberProfile();
   }
 });

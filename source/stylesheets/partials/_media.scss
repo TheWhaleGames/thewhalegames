@@ -3,10 +3,6 @@
     width: 100%;
   }
 
-  .class {
-    margin: 0 auto;
-  }
-
   h1 {
     font-size: 1em;
   }
@@ -36,7 +32,6 @@
 
       .global-nav-move {
         display: none;
-
       }
     }
   }
@@ -54,7 +49,6 @@
       .people_dancing {
         img{
           width: 8%;
-
           @media screen and (min-width: 500px) {
             width: 5%;
           }

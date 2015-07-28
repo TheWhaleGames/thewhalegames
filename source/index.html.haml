@@ -18,9 +18,9 @@ members:
   %canvas#trianglify
   %section#company
     = image_tag('roket.png', class: 'roket')
-    %h1#found
+    %h1
       2013년 6월에 설립
-    %p#company_content
+    %p
       대기업-게임회사-스타트업 등의<br> 다양한 백그라운드를 가진 #{current_page.data.members.count}명의 인재들이 함께하고 있습니다.
 
   #bk_gradient
@@ -33,21 +33,22 @@ members:
         %p
           게임 전문 웹툰 서비스<br>
           = link_to "http://battlecomics.co.kr" do
-            %em#battlecomics 배틀코믹스
+            %em 배틀코믹스
           <br>배틀코믹스는 현재<br> 약 <span style = "color: #ffd281">170여명의 작가</span>들이 작품을 연재 중이며,<br> <span style = "color: #ffd281">구글 스토어 평점 4.9</span>의 높은 평가를 받고 있습니다.
       .phone
-        = image_tag('phone_R.png', class: 'phone R')
-        = image_tag('phone_F.png', class: 'phone F')
         = image_tag('phone_L.png', class: 'phone L')
+        = image_tag('phone_F.png', class: 'phone F')
+        = image_tag('phone_R.png', class: 'phone R')
 
 
     %section#vision
       = image_tag('chinaflag.png')
       %p
-        %em#conqueringChina
+        %em
           2015년 중 중국서비스 진출
-      %p#vision_content
+      %p
         2015년 중 예정된,<br>중국 서비스 런칭을 시작으로 다양한 글로벌 지역에 진출을 준비 중입니다.
+
   #bk_gradient_ending
   
   %section#members 
@@ -66,11 +67,13 @@ members:
       우리는 한번 물면 끝장을 보는 Grit을 갖고 있는 팀입니다.<br>
       그리고, 우리는 반드시 세계적인 회사를 만들 것입니다.<br>
       우리는 재미있는, 신나는 일을 하는 팀입니다.
+      
   #trianglify2 
     = image_tag("trianglebg.jpg", class: 'trianglify2')
+
   %section#join_us
     .communication
-      %p#head 커뮤니케이션
+      %p#title 커뮤니케이션
       %p#join_content
         혼자서는 아무것도 할 수 없습니다.<br>
         우리는 공통의 목표를 위해<br> 
@@ -79,14 +82,14 @@ members:
         하지만<br>
         배려있는 커뮤니케이션을 중요시합니다.
     .responsibility
-      %p#head 책임감
+      %p#title 책임감
       %p#join_content
         사람과 시간은 항상 넉넉치 않습니다.<br>
         어떠한 상황에서도 약속한 시간에,<br>
         높은 완성도로 자신의 역할을 다하는<br>
         책임감을 중요시 합니다.
     .value
-      %p#head 성과
+      %p#title 성과
       %p#join_content
         우리가 모인 근본적인 이유는<br> 
         일을 하고 성과를 만들어내기 위함입니다.<br>

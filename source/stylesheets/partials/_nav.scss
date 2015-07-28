@@ -28,7 +28,7 @@
         }
       }
 
-      .moving_menu {
+      .balloon_menu {
         display: inline-block;
         vertical-align: middle;
 
@@ -37,21 +37,6 @@
 
         position: relative;
         z-index: 3;
-
-        .balloon_menu {
-          padding: 0;
-          width: 80px;
-          height: 70px;
-
-          position: absolute;
-          top: 50%;
-          z-index: 4;
-
-          -webkit-transform: translate(-50%, -50%);
-          -moz-transform: translate(-50%, -50%);
-          -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-        }
 
         #hamburger span {
           cursor: pointer;
@@ -76,7 +61,6 @@
           background: white;
           display: block;
           content: '';
-
         }
 
         #hamburger span:before {

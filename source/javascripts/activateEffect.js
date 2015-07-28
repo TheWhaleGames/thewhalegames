@@ -1,4 +1,4 @@
-var activate = {
+var activateEffect = {
   dance: function(){
     $(".people_dancing img").each(function(){
       var rand = Math.floor((Math.random() * 10000) + 1000);
@@ -25,47 +25,6 @@ var activate = {
     });
   },
 
-  scrollToSection: function(){
-    $(".scroll").bind("click", scrollFunction.scrollDown);
-    $("ul.global-nav-list li:first").bind("click", scrollFunction.hero);
-    $("ul.global-nav-list li:nth-child(2)").bind("click", scrollFunction.works);
-    $("ul.global-nav-list li:nth-child(3)").bind("click", scrollFunction.team);
-    $("ul.global-nav-list li:nth-child(4)").bind("click", scrollFunction.contact);
-
-    if($(window).width() >= 1024){
-      var count = 0;
-      $(".moving_menu").click(function(){
-        $("#hamburger").toggleClass("active");
-
-
-        if(count%2 == 0) {
-          $("ul").removeClass("animation_slideOut").addClass("animation_slideIn");
-
-          $($("ul li").get().reverse()).each(function(index){
-            var child = $(this);
-
-            setTimeout(function(){
-              child.css("opacity", "0");
-            }, index*175);
-          });
-        }
-        else {
-          $("ul").removeClass("animation_slideIn").addClass("animation_slideOut");
-
-          $("ul li").each(function(index){
-            var child = $(this) ;
-
-            setTimeout(function(){
-              child.css("opacity", "1");
-            }, index*170);
-          });
-
-        }
-        count++;
-      });
-    }
-  },
-
   hoverEffect: function(){
     $("#join_us div").each(function(){
       $(this).mouseenter(function(){
@@ -75,7 +34,7 @@ var activate = {
           "background-color": "#a32c2c",
           "opacity": "1"
         });
-        target.children("#head").css("opacity", "0");
+        target.children("#title").css("opacity", "0");
         target.children("#join_content").css("opacity", "1");
       })
       .mouseleave(function(){
@@ -85,7 +44,7 @@ var activate = {
           "background-color" : "#bbb",
           "opacity": ".7"
         });
-        target.children("#head").css("opacity", "1");
+        target.children("#title").css("opacity", "1");
         target.children("#join_content").css("opacity", "0");
       })
     });
@@ -168,30 +127,6 @@ var activate = {
           $("p#content").css("display", "none");
         });
       });
-    });
-  },
-
-  menuColorChange : function(){
-    var heroHeight = $(".hero").height();
-    var gradientTop = $("#bk_gradient").offset().top;
-    var gradientBottom = gradientTop + $("#bk_gradient").position().top;
-
-    $(window).scroll( function(){
-      var scroll = $(window).scrollTop();
-      if(scroll > heroHeight){
-        $("li.global-nav-item").css("color", "black");
-
-        if(scroll > gradientTop && scroll < gradientBottom){
-          $("li.global-nav-item").css("color", "white");
-          $("#service").animate({
-            opacity: "1",
-            "margin-top": "15%"
-          }, 2000);
-        }
-      }
-      else {
-        $("li.global-nav-item").css("color", "white");
-      }
     });
   }
 }

@@ -1,4 +1,5 @@
 var scrollFunction = function(){
+
   var scrollDown = function() {
     var jumpHeight = $("header.hero").height() + $(".deco_end").height();
 

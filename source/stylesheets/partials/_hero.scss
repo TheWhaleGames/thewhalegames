@@ -2,8 +2,6 @@
   font-weight: lighter;
   color: white;
 
-  text-align: center;
-
   .wrap-container {
     height: inherit;
     text-align: center;
@@ -39,6 +37,7 @@
       transform: translateY(-100%);
 
       .scroll {
+        font-size: 0.8em;
         margin-bottom: $small-spacing/2;
       }
 
@@ -49,7 +48,6 @@
     }
 
     .people_dancing {
-
       img {
         display: inline-block;
         position: absolute;
@@ -86,7 +84,7 @@
       }
     }
 
-    .deco_end {
+    .pattern {
       position: absolute;
       left: 0;
       bottom : 0;

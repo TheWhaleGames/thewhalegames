@@ -2,11 +2,12 @@
   position: relative;
   top : -500px;
 
-  h1#found {
+  h1 {
+    margin-top: $small-spacing;
     color: black;
   }
 
-  p#company_content{
+  p {
     margin-top : $small-spacing;
   }
 }
