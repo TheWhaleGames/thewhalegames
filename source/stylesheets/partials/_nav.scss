@@ -1,32 +1,96 @@
 .global-nav {
-  // height: 4em;
-  background-color: $ci-primary;
-  padding: 1em 0;
-  position: relative;
+  .wrap-container {
+    .global-nav-item {
+      img.banner_logo {
+        width: 170px;
+        margin : 1% 1%;
+        float : left;
+      }
+    }
 
-  a {
-    color: white;
+    .global-nav-move {
+      position: fixed;
+      right: 10px;
+      z-index: 2;
+
+      ul.global-nav-list {
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+
+        font-size: 0.8em;
+
+        li {
+          display: inline;
+          margin-right: $base-spacing;
+        }
+        li:hover {
+          cursor: default;
+          text-decoration: underline;
+        }
+      }
+
+
+      .balloon_menu {
+        display: inline-block;
+        vertical-align: middle;
+
+        width: 80px;
+        height: 70px;
+
+        position: relative;
+        z-index: 3;
+
+        #hamburger span {
+          cursor: pointer;
+          padding: 0;
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          z-index: 5;
+
+          -webkit-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+        }
+
+        #hamburger span, #hamburger span:before, #hamburger span:after {
+          cursor: pointer;
+          height: 23px;
+          width: 3.5px;
+          position: absolute;
+          background: white;
+          display: block;
+          content: '';
+        }
+
+        #hamburger span:before {
+          left: -9px;
+        }
+        #hamburger span:after {
+          right: -9px;
+        }
+
+        #hamburger span, #hamburger span:before, #hamburger span:after {
+          transition: all 500ms ease-in-out;
+        }
+
+        #hamburger.active span {
+          left: 50%;
+          -webkit-transform-origin: 50% 0;
+          -moz-transform-origin: 50% 0;
+          -ms-transform-origin: 50% 0;
+          -o-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+          -webkit-transform: rotate(-90deg) translateY(-50%);
+          -moz-transform: rotate(-90deg) translateY(-50%);
+          -ms-transform: rotate(-90deg) translateY(-50%);
+          -o-transform: rotate(-90deg) translateY(-50%);
+          transform: rotate(-90deg) translateY(-50%);
+        }
+      }
+    }
   }
-
-  a:hover {
-    color: lighten($ci-primary, 40);
-  }
-}
-
-.global-nav-item {
-  display: inline-block;
-  margin-right: 2em;
-}
-
-.global-nav-list {
-  display: inline-block;
-  float: right;
-  line-height: 2em;
-}
-
-.logo-text {
-  margin-left: 1em;
-  float: left;
-  font-size: 1.25em;
-  font-weight: 700;
 }

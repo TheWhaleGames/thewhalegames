@@ -1,15 +1,14 @@
 @charset "utf-8";
 
-@import "bourbon";
 @import "base/base";
-@import "neat";
 
 @import "partials/layout";
 @import "partials/nav";
 @import "partials/footer";
 @import "partials/hero";
+@import "partials/animation";
+@import "partials/profile";
 
-@import 'index';
-@import 'team';
-@import 'environment';
-@import 'join-us';
+@import 'index/index';
+
+@import "partials/media";

@@ -1,9 +1,10 @@
 // Typography
-$base-font-family: $helvetica;
+$base-font-family: "나눔바른고딕", "나눔SD고딕", "Nanum Barun Gothic", "Apple SD Gothic Neo", "돋움", Dotum, "Helvetica", "Roboto", "Arial", sans-serif;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
-$base-font-size: 1em;
+$base-font-size: 1.2em;
+$heading-font-size: 2em;
 
 // Line height
 $base-line-height: 1.5;
@@ -16,7 +17,7 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$ci-primary: #b8252b;
+$ci-primary: #be1e2d;
 $battlecomics-primary-color: #9b63b5;
 $blue: #477dca;
 $dark-gray: #333;
