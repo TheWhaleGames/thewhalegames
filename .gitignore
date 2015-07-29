@@ -19,7 +19,7 @@
 
 /cookbooks
 .vagrant/
-vimsettings-master
+vimsettings
 
 ### Vim ###
 [._]*.s[a-w][a-z]

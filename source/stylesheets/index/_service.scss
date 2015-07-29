@@ -1,6 +1,5 @@
 #bk_gradient {
   width: 100%;
-
   color: white;
 
   img.bulb {
@@ -31,15 +30,13 @@
     -ms-transform: translateY(-60px);
     transform: translateY(-60px);
 
-    p {
-      margin-bottom: $base-spacing;
-      margin-left: $base-spacing;
+    em {
+      color: $battlecomics-primary-color;
     }
   }
 
   .phone {
     display: inline-block;
-    margin-top: $base-spacing * 2;
 
     text-align: center;
 
@@ -47,16 +44,9 @@
       margin-bottom: 60px;  
       margin-right: $base-spacing;
     }
-    .F {
-      margin-top: 30px;
-    }
     .L {
       margin-bottom: 60px;  
       margin-left: $base-spacing * 2;
     }
-  }
-
-  a {
-    color: $battlecomics-primary-color;
   }
 }
