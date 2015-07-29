@@ -8,9 +8,10 @@ var activateMenu = {
 
     if($(window).width() >= 1024){
       var count = 0;
+      $("li:first").css("margin-left", "$base-spacing");
+      $("li:nth-child(4)").css("margin-right", "$base-spacing");
       $(".balloon_menu").click(function(){
         $("#hamburger").toggleClass("active");
-
 
         if(count%2 == 0) {
           $("ul").removeClass("animation_slideOut").addClass("animation_slideIn");
@@ -20,7 +21,7 @@ var activateMenu = {
 
             setTimeout(function(){
               child.css("opacity", "0");
-            }, index*175);
+            }, index*180);
           });
         }
         else {
@@ -31,7 +32,7 @@ var activateMenu = {
 
             setTimeout(function(){
               child.css("opacity", "1");
-            }, index*170);
+            }, index*120);
           });
 
         }
@@ -54,7 +55,7 @@ var activateMenu = {
           $("li.global-nav-item").css("color", "white");
           $("#service").animate({
             opacity: "1",
-            "margin-top": "15%"
+            "margin-top": "10%"
           }, 2000);
         }
       }
