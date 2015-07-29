@@ -8,7 +8,8 @@
     position: relative;
 
     img.center_logo {
-      width: 500px;
+      width: 410px;
+      height: 170px;
       position: absolute;
       top: 50%;
       left : 50%;
@@ -42,11 +43,12 @@
 
         position: absolute;
         top: 0;
+        left: 50%;
 
-        -webkit-transform: translate(-25%, -105%);
-        -moz-transform: translate(-25%, -105%);
-        -ms-transform: translate(-25%, -105%);
-        transform: translate(-25%, -105%);
+        -webkit-transform: translate(-50%, -105%);
+        -moz-transform: translate(-50%, -105%);
+        -ms-transform: translate(-50%, -105%);
+        transform: translate(-50%, -105%);
       }
 
       .scroll:hover{
@@ -107,6 +109,10 @@
       width: 100%;
       background-image: url('../../images/pattern01.png');
       background-repeat: repeat;
+
+      img.hammer, img.hammer_active{
+        display: none;
+      }
     }
   }
 }

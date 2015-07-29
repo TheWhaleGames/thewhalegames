@@ -7,31 +7,31 @@ var scrollFunction = function(){
 
       scrollTop : jumpHeight
 
-    }, 2000);
+    }, 500);
   }
 
   var jump2hero = function(){
     $('html, body').animate({
       scrollTop : $(".hero").offset().top
-    }, 4000);
+    }, 500);
   }
 
   var jump2works = function(){
     $('html, body').animate({
       scrollTop : $("#bk_gradient").offset().top
-    }, 2500);
+    }, 500);
   }
 
   var jump2team = function(){
     $('html, body').animate({
       scrollTop : $("#members").offset().top-100
-    }, 2500);
+    }, 500);
   }
 
   var jump2contact = function(){
     $('html, body').animate({
-      scrollTop : $("#environment").offset().top + 300
-    }, 4000);
+      scrollTop : $("#map").offset().top
+    }, 500);
   }
 
   return {

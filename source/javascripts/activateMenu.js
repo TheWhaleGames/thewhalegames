@@ -56,7 +56,7 @@ var activateMenu = {
           $("#service").animate({
             opacity: "1",
             "margin-top": "10%"
-          }, 2000);
+          }, 1200);
         }
       }
       else {

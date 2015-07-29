@@ -10,8 +10,6 @@ $(function(){
     }, 500);
   }
 
-  $.easing.def = 'easeOutCubic';
-
   draw_triangle.drawFirst();
   draw_triangle.drawSecond(); 
 

@@ -9,21 +9,83 @@ var activateEffect = {
 
       var count = 0;
 
-      $(this).click(function(){
-        console.log('clicked');
+      $(this).click(function(e){
+
+        console.log("click");
 
         count++;
 
         if(count%2 == 1) {
           $(this).css("bottom", "5%");
           $(this).addClass("animation_shake");
+
+          $(".hammer").css("display", "inline-block").offset({
+            left: e.pageX,
+            top: e.pageY - 70
+          }).delay(200).queue(function(){
+
+            console.log("delay!");
+            $(".hammer").css("display", "none");
+            $(".hammer_active").css("display", "inline-block").offset({
+              left: e.pageX,
+              top: e.pageY - 70
+            }).delay(200).queue(function(){
+              $(".hammer_active").css("display", "none");
+            });
+          });
         }
         else {
           $(this).removeClass("animation_shake");
         }
+
       });
+
+      //$(this).click(function(){
+      //count++;
+
+      //if(count%2 == 1) {
+          //$(this).css("bottom", "5%");
+          //$(this).addClass("animation_shake");
+        //}
+        //else {
+          //$(this).removeClass("animation_shake");
+        //}
+      //});
     });
   },
+
+  //hammering: function(){
+    //$(".hammer").bind("click", function(){
+      //activateEffect.hammer_follow();
+      //});
+
+  //},
+
+  //hammer_follow: function(){
+
+    //$(".people_dancing img").each(function(){
+      //$(this).click(function(){
+        //$(this).data('clicked', true);
+      //});
+    //});
+
+    //$(window).mousemove(function(e){
+      //$(".hammer").offset({
+        //left: e.pageX+10,
+        //top: e.pageY-50
+      //});
+
+      //$(".people_dancing img").each(function(){
+        //if($(this).data('clicked')){
+          //$(this).css("bottom", "5%");
+          //$(this).addClass("animation_shake");
+
+          //console.log("clicked");
+          //$(this).data('clicked', false);
+        //}
+      //});
+    //});
+  //},
 
   hoverEffect: function(){
     $("#join_us div").each(function(){
