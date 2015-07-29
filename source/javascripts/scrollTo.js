@@ -13,25 +13,25 @@ var scrollFunction = function(){
   var jump2hero = function(){
     $('html, body').animate({
       scrollTop : $(".hero").offset().top
-    }, 2000);
+    }, 3000);
   }
 
   var jump2works = function(){
     $('html, body').animate({
-      scrollTop : $(".container section#service").offset().top
-    }, 1500);
+      scrollTop : $("#service").offset().top-100
+    }, 2000);
   }
 
   var jump2team = function(){
     $('html, body').animate({
-      scrollTop : $(".container section#members").offset().top
-    }, 1500);
+      scrollTop : $("#members").offset().top-100
+    }, 2000);
   }
 
   var jump2contact = function(){
     $('html, body').animate({
-      scrollTop : $("#map").offset().top
-    }, 1500);
+      scrollTop : $("#environment").offset().top + 300
+    }, 2500);
   }
 
   return {

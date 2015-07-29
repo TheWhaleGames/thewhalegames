@@ -42,16 +42,16 @@ var activateMenu = {
   },
 
   menuColorChange : function(){
-    var heroHeight = $(".hero").height();
+    var heroHeight = $(".hero").height() - 10;
     var gradientTop = $("#bk_gradient").offset().top;
     var gradientBottom = gradientTop + $("#bk_gradient").position().top;
 
     $(window).scroll( function(){
       var scroll = $(window).scrollTop();
-      if(scroll > heroHeight){
+      if(scroll >= heroHeight){
         $("li.global-nav-item").css("color", "#787878");
 
-        if(scroll > gradientTop && scroll < gradientBottom){
+        if(scroll >= gradientTop && scroll < gradientBottom){
           $("li.global-nav-item").css("color", "white");
           $("#service").animate({
             opacity: "1",
