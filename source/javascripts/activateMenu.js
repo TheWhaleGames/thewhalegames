@@ -43,7 +43,7 @@ var activateMenu = {
 
   menuColorChange : function(){
     var heroHeight = $(".hero").height() - 10;
-    var gradientTop = $("#bk_gradient").offset().top;
+    var gradientTop = $("#bk_gradient").offset().top - 10;
     var gradientBottom = gradientTop + $("#bk_gradient").position().top;
 
     $(window).scroll( function(){
