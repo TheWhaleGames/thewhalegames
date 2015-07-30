@@ -1,17 +1,118 @@
 .hero {
+  font-weight: lighter;
   color: white;
-  background: $ci-primary;
-  text-align: center;
 
-  img {
-    width: 60%;
-  }
+  .wrap-container {
+    height: inherit;
+    text-align: center;
+    position: relative;
 
-  .vision {
-    margin-top: $base-spacing;
-    font-size: 1.2em;
-    @include media($medium-screen) {
-      font-size: 1.5em;
+    img.center_logo {
+      width: 410px;
+      height: 170px;
+      position: absolute;
+      top: 50%;
+      left : 50%;
+
+      -webkit-transform: translate(-50%, -100%);
+      -moz-transform: translate(-50%, -100%);
+      -ms-transform: translate(-50%, -100%);
+      transform: translate(-50%, -100%);
+    }
+
+    p.vision {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+    }
+
+    .detail {
+      -webkit-transform: translateY(-100%);
+      -moz-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+      transform: translateY(-100%);
+
+      .scroll {
+        display: inline-block;
+        font-size: 0.8em;
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+
+        -webkit-transform: translate(-50%, -105%);
+        -moz-transform: translate(-50%, -105%);
+        -ms-transform: translate(-50%, -105%);
+        transform: translate(-50%, -105%);
+      }
+
+      .scroll:hover{
+        cursor: default;
+        color: darken(white, 30);
+      }
+    }
+
+    .people_dancing {
+      img {
+        display: inline-block;
+        position: absolute;
+        bottom: 1%;
+        width: 3%;
+
+        -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+        filter: url(#drop-shadow);
+        -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+        filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+      }
+
+      .skkwon {
+        left: 9%;
+      }
+      .sbpark {
+        left: 18%;
+      }
+      .sybae {
+        left: 27%;
+      }
+      .fred {
+        left: 36%;
+      }
+      .skyoon {
+        left: 45%;
+      }
+      .eslee {
+        left: 54%;
+      }
+      .jhlim {
+        left: 63%;
+      }
+      .kyjung {
+        left: 72%;
+      }
+      .jwheo {
+        left: 81%;
+      }
+    }
+
+    .pattern {
+      position: absolute;
+      left: 0;
+      bottom : 0;
+      z-index: 1;
+
+      height: 7%;
+      width: 100%;
+      background-image: url('../../images/pattern01.png');
+      background-repeat: repeat;
+
+      img.hammer, img.hammer_active{
+        display: none;
+      }
     }
   }
 }

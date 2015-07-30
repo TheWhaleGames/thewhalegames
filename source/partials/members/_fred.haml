@@ -1,11 +1,22 @@
 .profile
-  = image_tag('members/fred.jpg')
-  %h2.profile__name
-    배승익
-    %small.profile__position CEO
-%p
-  서울대학교 경영학과, 넥슨코리아-넥슨아메리카-스마일게이트 미국법인 등
-  국내외 게임업계에서 약 10여년간 경험을 쌓았습니다.<br>
-  따뜻한 캘리포니아에서 잘 다니던 회사를 때려치우고 돌아와, 10년간 가슴에
-  품고 있던 창업을 위해 사서 고생 중입니다. 중요하게 생각하는 가치는 팀웍,
-  신뢰, 책임감입니다. 꿈은 세계 정복입니다.
+  .wrap_left
+    = image_tag('members/fred.jpg', id: 'me')
+    %h3.profile__name
+      배승익<br>
+      %small.profile__position CEO
+  .wrap_right
+    = image_tag("members_triangle.png", id: 'balloon')
+    %p#content
+      서울대학교 경영학과,<br>
+      넥슨코리아-<br>
+      넥슨아메리카-<br>
+      스마일게이트 미국법인 등<br>
+      국내외 게임업계에서 약 10여년간<br> 
+      경험을 쌓았습니다.<br>
+      따뜻한 캘리포니아에서 잘 다니던 회사를<br> 
+      때려치우고 돌아와,<br>
+      10년간 가슴에 품고 있던 창업을 위해<br>
+      사서 고생 중입니다.<br>
+      중요하게 생각하는 가치는<br>
+      팀웍, 신뢰, 책임감입니다.<br>
+      꿈은 세계 정복입니다.

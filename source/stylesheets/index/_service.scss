@@ -1,0 +1,54 @@
+#bk_gradient {
+  width: 100%;
+  color: white;
+
+  img.bulb {
+    display: inline-block;
+    position: relative;
+    top: -165px;
+  }
+
+  h1 {
+    margin: 0;
+    position: relative;
+    top: -150px;
+  }
+}
+
+#service {
+  opacity: 0;
+  margin-bottom: 5%;
+
+  position: relative;
+  top: 25%;
+
+  .content{
+    display: inline-block;
+
+    text-align: right;
+
+    -webkit-transform: translateY(-60px);
+    -moz-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    transform: translateY(-60px);
+
+    em {
+      color: $battlecomics-primary-color;
+    }
+  }
+
+  .phone {
+    display: inline-block;
+
+    text-align: center;
+
+    .R {
+      margin-bottom: 60px;  
+      margin-right: $base-spacing;
+    }
+    .L {
+      margin-bottom: 60px;  
+      margin-left: $base-spacing * 2;
+    }
+  }
+}

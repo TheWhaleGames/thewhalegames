@@ -1,4 +1,5 @@
 footer {
+  height: 7%;
   background: #303030;
   color: $light-gray;
 
@@ -9,21 +10,15 @@ footer {
     }
   }
 
-  .wrap-container {
+  .wrap-container-footer {
+    position: relative;
     padding: $base-spacing;
 
     address {
-      @include span-columns(12);
-      @include media($medium-screen) {
-        @include span-columns(8);
-      }
+      display: inline-block;
     }
-
     .contact {
-      @include span-columns(12);
-      @include media($medium-screen) {
-        @include span-columns(4);
-      }
+      float: right;
     }
   }
 }

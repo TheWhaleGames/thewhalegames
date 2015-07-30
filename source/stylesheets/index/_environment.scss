@@ -1,0 +1,47 @@
+#environment {
+  margin-bottom: $base-spacing*4;
+
+  h2 {
+    display: inline-block;
+    color: #767676;
+    border-bottom: 4px solid #a32c2c;
+  }
+
+  .icon{
+    display: block;
+    margin-top: $base-spacing;
+    margin-bottom: $base-spacing * 3;
+
+    div {
+      vertical-align: top;
+      display: inline-block;
+      width: 15%;        
+      min-width: 222px;
+      height: 240px;
+
+      margin: 0;
+    }
+  }
+
+  #map {
+    margin-left: 20%;
+    margin-bottom: $base-spacing;
+    width: 60%;
+    height: 400px;
+  }
+
+  #contact {
+    height: 40px;
+
+    font-weight: bold;
+    line-height: 40px;
+    padding: 0 50px;
+
+    display: inline-block;
+
+    margin: $base-spacing*2 auto 0 auto;
+
+    border: 1px solid #808080;
+    border-radius: 100px;
+  }
+}

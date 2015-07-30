@@ -17,6 +17,16 @@
 # Ignore .DS_store file
 .DS_Store
 
+vimsettings
 /cookbooks
 .vagrant/
 .env
+
+### Vim ###
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
+tmp/**/*
