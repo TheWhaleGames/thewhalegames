@@ -2,6 +2,7 @@ var activateEffect = {
   dance: function(){
     $(".people_dancing img").each(function(){
       var rand = Math.floor((Math.random() * 10000) + 1000);
+      var target_img = $(this);
 
       $(this).delay(rand).queue(function(){
         $(this).addClass("animation_dance");
@@ -10,8 +11,6 @@ var activateEffect = {
       var count = 0;
 
       $(this).click(function(e){
-
-        console.log("click");
 
         count++;
 
@@ -23,69 +22,30 @@ var activateEffect = {
             left: e.pageX,
             top: e.pageY - 70
           }).delay(200).queue(function(){
-
-            console.log("delay!");
             $(".hammer").css("display", "none");
             $(".hammer_active").css("display", "inline-block").offset({
-              left: e.pageX,
-              top: e.pageY - 70
+              left: e.pageX - 20,
+              top: e.pageY - 80
             }).delay(200).queue(function(){
-              $(".hammer_active").css("display", "none");
+              $(".hammer_active").css("display", "none")
+              .delay(100).queue(function(){
+                target_img.addClass("animation_rocket");
+                $(".hammer_active").dequeue();
+              });
+              $(".hammer_active").dequeue();
             });
+            $(".hammer").dequeue();
           });
         }
         else {
+          console.log("click");
+          $(this).removeClass("animation_rocket");
           $(this).removeClass("animation_shake");
         }
 
       });
-
-      //$(this).click(function(){
-      //count++;
-
-      //if(count%2 == 1) {
-          //$(this).css("bottom", "5%");
-          //$(this).addClass("animation_shake");
-        //}
-        //else {
-          //$(this).removeClass("animation_shake");
-        //}
-      //});
     });
   },
-
-  //hammering: function(){
-    //$(".hammer").bind("click", function(){
-      //activateEffect.hammer_follow();
-      //});
-
-  //},
-
-  //hammer_follow: function(){
-
-    //$(".people_dancing img").each(function(){
-      //$(this).click(function(){
-        //$(this).data('clicked', true);
-      //});
-    //});
-
-    //$(window).mousemove(function(e){
-      //$(".hammer").offset({
-        //left: e.pageX+10,
-        //top: e.pageY-50
-      //});
-
-      //$(".people_dancing img").each(function(){
-        //if($(this).data('clicked')){
-          //$(this).css("bottom", "5%");
-          //$(this).addClass("animation_shake");
-
-          //console.log("clicked");
-          //$(this).data('clicked', false);
-        //}
-      //});
-    //});
-  //},
 
   hoverEffect: function(){
     $("#join_us div").each(function(){
