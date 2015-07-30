@@ -42,8 +42,8 @@ var activateMenu = {
   },
 
   whileWindowScroll: function(){
-    var heroHeight = $(".hero").height() - 10;
-    var gradientTop = $("#bk_gradient").offset().top - 10;
+    var heroHeight = $(".hero").height() - 20;
+    var gradientTop = $("#bk_gradient").offset().top - 20;
     var gradientBottom = gradientTop + $("#bk_gradient").position().top;
 
     $(window).scroll( function(){
