@@ -1,12 +1,9 @@
 var scrollFunction = function(){
-
   var scrollDown = function() {
     var jumpHeight = $("header.hero").height() + $(".deco_end").height();
 
     $('html, body').animate({
-
       scrollTop : jumpHeight
-
     }, 500);
   }
 
