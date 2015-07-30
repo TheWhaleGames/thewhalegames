@@ -73,8 +73,6 @@ var activateEffect = {
 
   memberProfile: function(){
     $(".member img").each(function(){
-      console.log("iteration: memberProfile called");
-
       var idName = "#" + $(this).attr('class');
 
       if(idName == "#skkwon") {
@@ -97,6 +95,7 @@ var activateEffect = {
       });
 
       $(this).bind("click", function(){
+        /*display block when clicked*/
         if(idName == "#skkwon") {
           $("#example").css("display", "inline-block");
         }
@@ -109,7 +108,7 @@ var activateEffect = {
         $(idName).children(".profile").css("display", "block");
         $(idName).children(".black_overlay").css("display", "block");
 
-        /*block display none*/
+        /*display none*/
         $(idName).children(".profile").bind("click", function(){
           $(idName).css("display", "none");
           $(this).css("display", "none");
