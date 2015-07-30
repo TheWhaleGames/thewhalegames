@@ -14,8 +14,11 @@ $ bundle exec middleman
 
 You are ready to go! Open [http://localhost:4567](http://localhost:4567)
 
-## Build
+## Build & Deploy
+
+Copy `.env.sample` to `.env` then fill out host, path, etc.
 
 ```
 $ bundle exec middleman build
+$ bundle exec middleman deploy
 ```
