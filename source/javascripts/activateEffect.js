@@ -38,7 +38,6 @@ var activateEffect = {
           });
         }
         else {
-          console.log("click");
           $(this).removeClass("animation_rocket");
           $(this).removeClass("animation_shake");
         }
@@ -74,63 +73,41 @@ var activateEffect = {
 
   memberProfile: function(){
     $(".member img").each(function(){
-      $(this).bind("click", function(){
-        var idName = "#" + $(this).attr('class');
+      console.log("iteration: memberProfile called");
 
+      var idName = "#" + $(this).attr('class');
+
+      if(idName == "#skkwon") {
+        $("#example").css({
+          "max-height": $(window).height()
+        });
+      }
+      else {
+        $("p#content").css({
+          "max-height": $(window).height()
+        });
+      }
+      $(idName).children(".profile").css({
+        "height" : $(window).height(),
+        "width" : 0.5*$(window).width()
+      });
+      $(idName).children(".black_overlay").css({
+        "height" : $(window).height(),
+        "width" : $(window).width()
+      });
+
+      $(this).bind("click", function(){
         if(idName == "#skkwon") {
-          var content_height= $("#example").outerHeight(true);
-          $("#example").css({
-            "max-height": $(window).height(),
-            "display": "inline-block"
-          });
+          $("#example").css("display", "inline-block");
         }
         else {
-          var height = -$(this).height();
-          $("p#content").css({
-            "max-height": $(window).height(),
-            "display": "inline-block"
-          });
+          $("p#content").css("display", "inline-block");
         }
-
+        
         $(idName).css("display", "block");
-        $(idName).children(".profile").css({
-          "height" : $(window).height(),
-          "width" : 0.5*$(window).width(),
-          "display": "block"
-        });
 
-        $(idName).children(".black_overlay").css({
-          "height" : $(window).height(),
-          "width" : $(window).width(),
-          "display" : "block"
-        });
-
-        /*when window resize, get new window height for the profiles*/
-        $(window).resize(function(){
-          if(idName == "#skkwon") {
-            var content_height= $("#example").outerHeight(true);
-            $("#example").css({
-              "max-height": $(window).height(),
-            });
-          }
-          else {
-            var height = -$(this).height();
-            $("p#content").css({
-              "max-height": $(window).height(),
-            });
-          }
-
-          $(idName).css("display", "block");
-          $(idName).children(".profile").css({
-            "height" : $(window).height(),
-            "width" : 0.5*$(window).width(),
-          });
-
-          $(idName).children(".black_overlay").css({
-            "height" : $(window).height(),
-            "width" : $(window).width(),
-          });
-        });
+        $(idName).children(".profile").css("display", "block");
+        $(idName).children(".black_overlay").css("display", "block");
 
         /*block display none*/
         $(idName).children(".profile").bind("click", function(){
