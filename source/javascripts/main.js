@@ -14,7 +14,7 @@ $(function(){
   draw_triangle.drawSecond(); 
 
   activateMenu.scrollToSection();
-  activateMenu.menuColorChange();
+  activateMenu.whileWindowScroll();
 
   activateEffect.dance();
   activateEffect.hoverEffect();

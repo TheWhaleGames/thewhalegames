@@ -41,7 +41,7 @@ var activateMenu = {
     }
   },
 
-  menuColorChange : function(){
+  whileWindowScroll: function(){
     var heroHeight = $(".hero").height() - 10;
     var gradientTop = $("#bk_gradient").offset().top - 10;
     var gradientBottom = gradientTop + $("#bk_gradient").position().top;
@@ -53,10 +53,7 @@ var activateMenu = {
 
         if(scroll >= gradientTop && scroll < gradientBottom){
           $("li.global-nav-item").css("color", "white");
-          $("#service").animate({
-            opacity: "1",
-            "margin-top": "10%"
-          }, 1200);
+          $("#service").addClass("animation_slideAppear");
         }
       }
       else {
