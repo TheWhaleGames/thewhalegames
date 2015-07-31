@@ -61,6 +61,8 @@
     }
 
     .people_dancing {
+      -webkit-backface-visibility: hidden;
+
       img {
         display: inline-block;
         position: absolute;
