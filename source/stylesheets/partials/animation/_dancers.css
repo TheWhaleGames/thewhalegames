@@ -78,6 +78,9 @@
   animation-direction: alternate;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
 }
 
 .animation_shake {
@@ -89,6 +92,9 @@
   animation-iteration-count: 30;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
+
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
 } 
 
 .animation_rocket {
@@ -100,4 +106,7 @@
   animation-iteration-count: 1;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
+
+  -webkit-perspective: 1000;
+  -webkit-backface-visibility: hidden;
 }
