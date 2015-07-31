@@ -78,6 +78,8 @@
   animation-direction: alternate;
   -webkit-animation-timing-function: ease-in-out;
   animation-timing-function: ease-in-out;
+
+  -webkit-animation-delay: -1s;
 }
 
 .animation_shake {
@@ -89,6 +91,7 @@
   animation-iteration-count: 30;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
+  -webkit-animation-delay: -1s;
 } 
 
 .animation_rocket {
@@ -100,4 +103,5 @@
   animation-iteration-count: 1;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
+  -webkit-animation-delay: -1s;
 }
