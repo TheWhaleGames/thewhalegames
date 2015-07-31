@@ -7,44 +7,16 @@ body {
   line-height: $base-line-height;
 }
 
-h1 {
-  font-size: $heading-font-size;
-}
-
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: $heading-font-size*0.6;
-}
-
-h1,
-h2, 
-h3,
-h4,
-h5,
-h6 {
-  font-family: $heading-font-family;
-  font-weight: 800;
-  font-style: normal;
-  line-height: $heading-line-height;
-  margin: $base-spacing*1.5 0 $small-spacing;
-}
-
-p {
-  margin: $small-spacing 0 $small-spacing;
-}
 
 a {
-  color: $action-color;
+  color: $medium-gray;
   text-decoration: none;
   transition: color 0.1s linear;
 
   &:active,
   &:focus,
   &:hover {
-    color: darken($action-color, 15%);
+    color: lighten($medium-gray, 15%);
   }
 
   &:active,

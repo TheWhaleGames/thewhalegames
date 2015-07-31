@@ -1,24 +1,12 @@
 footer {
-  height: 7%;
-  background: #303030;
-  color: $light-gray;
-
-  a {
-    color: $medium-gray;
-    &:hover {
-      color: $light-gray;
-    }
-  }
-
-  .wrap-container-footer {
+  height: 200px;
+  background: $dark-gray;
     position: relative;
-    padding: $base-spacing;
 
-    address {
-      display: inline-block;
-    }
-    .contact {
-      float: right;
-    }
+  img {
+    float: left;
+    position: absolute;
+    bottom: 10%;
+    right: 3%;
   }
 }

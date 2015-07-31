@@ -10,45 +10,65 @@
 
   h1 {
     margin: 0;
+    font-family: "Arial Regular";
+    font-weight: 500;
+    font-size: 4em;
     position: relative;
-    top: -150px;
+    top: -170px;
   }
 }
 
 #service {
   opacity: 0;
-  margin-bottom: 5%;
-
-  position: relative;
-  top: 25%;
+  margin-top: 15%;
+  margin-bottom: 15%;
 
   .content{
+    font-family: 'Apple SD Gothic Neo Regular', 'Nanum Barun Gothic Regular';
     display: inline-block;
-
     text-align: right;
 
-    -webkit-transform: translateY(-60px);
-    -moz-transform: translateY(-60px);
-    -ms-transform: translateY(-60px);
-    transform: translateY(-60px);
+    -webkit-transform: translateY(-50px);
+    -moz-transform: translateY(-50px);
+    -ms-transform: translateY(-50px);
+    transform: translateY(-50px);
 
-    em {
-      color: $battlecomics-primary-color;
+    .battle_comics {
+      width: 300px;
+    }
+
+    p#BC{
+      font-family: 'Apple SD Gothic Neo Regular', 'Nanum Barun Gothic Bold';
+      margin: 50px 0 0 0;
+      font-size: 1.5em;
+      line-height: 1.7em;
+
+      em {
+        color: $battlecomics-primary-color;
+      }
+    }
+
+    p#BC_intro {
+      margin: 20px 0 0 0;
+      font-size: 1em;
     }
   }
 
   .phone {
     display: inline-block;
-
     text-align: center;
 
-    .R {
-      margin-bottom: 60px;  
-      margin-right: $base-spacing;
-    }
     .L {
-      margin-bottom: 60px;  
-      margin-left: $base-spacing * 2;
+      margin-left: 70px;
+      margin-bottom: 30px;
+    }
+    .F {
+      margin-left: -20px;
+      margin-bottom: -30px;
+    }
+    .R {
+      margin-left: -23px;
+      margin-bottom: 30px;
     }
   }
 }

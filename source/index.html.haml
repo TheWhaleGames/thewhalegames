@@ -17,36 +17,36 @@ members:
 .container
   %canvas#trianglify
   %section#company
-    = image_tag('roket.png', class: 'roket')
+    = image_tag('roket.svg', class: 'roket')
     %h1
       2013년 6월에 설립
     %p
       대기업-게임회사-스타트업 등의<br> 다양한 백그라운드를 가진 #{current_page.data.members.count}명의 인재들이 함께하고 있습니다.
 
   #bk_gradient
-    = image_tag('bulb.png', class: 'bulb');
+    = image_tag('bulb.svg', class: 'bulb');
     %h1 
       WORKS
     %section#service
       .content
         = link_to image_tag('BClogo.png', class: 'battle_comics'), "http://battlecomics.co.kr"
-        %p
+        %p#BC
           게임 전문 웹툰 서비스<br>
           = link_to "http://battlecomics.co.kr" do
             %em 배틀코믹스
-          <br>배틀코믹스는 현재<br> 약 <span style = "color: #ffd281">170여명의 작가</span>들이 작품을 연재 중이며,<br> <span style = "color: #ffd281">구글 스토어 평점 4.9</span>의 높은 평가를 받고 있습니다.
+        %p#BC_intro
+          배틀코믹스는 현재<br> <span style = "color: #fff769">약 170여명의 작가</span>들이 작품을 연재 중이며,<br> <span style = "color: #fff769">구글 스토어 평점 4.9</span>의 높은 평가를 받고 있습니다.
       .phone
         = image_tag('phone_L.png', class: 'phone L')
         = image_tag('phone_F.png', class: 'phone F')
         = image_tag('phone_R.png', class: 'phone R')
 
-
     %section#vision
-      = image_tag('chinaflag.png')
-      %p
+      = image_tag('chinaflag.svg')
+      %p#china
         %em
           2015년 중 중국서비스 진출
-      %p
+      %p#china_intro
         2015년 중 예정된,<br>중국 서비스 런칭을 시작으로 다양한 글로벌 지역에 진출을 준비 중입니다.
 
   #bk_gradient_ending
@@ -102,23 +102,23 @@ members:
     %h2 근무 환경
     .icon 
       .time
-        = image_tag('clock.png')
+        = image_tag('clock.svg')
         %p
           10시 출근입니다<br> 퇴근은 각자가<br> 자율적으로 정합니다<br>(물론 앞뒤로 모두 자율적입니다)
       .facility
-        = image_tag('health.png')
+        = image_tag('health.svg')
         %p
           헬스장, 샤워장,<br> 휴게실, 수면시설이<br> 완비되어 있습니다
       .coffee
-        = image_tag('coffee.png')
+        = image_tag('coffee.svg')
         %p
           에스프레소 머신에서<br> 스타벅스 원두 커피가<br> 무한정 제공됩니다
       .cookie
-        = image_tag('cookie.png')
+        = image_tag('cookie.svg')
         %p
           과일, 과자 등의 간식을<br> 무한정 먹을 수 있습니다
       .employees
-        = image_tag('monitor.png')
+        = image_tag('monitor.svg')
         %p
           개발자/디자이너의 경우<br> PC와 모니터, 키보드 등의<br> 주변기기를
           원하는대로<br> 맞춤형으로 제공합니다.
@@ -128,7 +128,7 @@ members:
       4호선과 2호선이 교차하는 교통의 요지, 사당역 인근에 사무실 위치
       (스마일게이트 벤쳐인큐베이팅 센터에 입주)
     #contact
-      CONTACT US
+      %a{href: 'mailto:contact#thewhalegames.com'} CONTACT US
 
 :javascript
   var map = new GMaps({

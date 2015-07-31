@@ -1,8 +1,14 @@
 #vision {
   margin-bottom: 0;
 
-  p {
-    margin-top: $small-spacing;
+  p#china{
+    font-family: 'Apple SD Gothic Neo Bold', 'Nanum Barun Gothic Bold';
+    margin-top: 65px;
     margin-bottom: 0;
+  }
+  p#china_intro {
+    margin: 30px 0 0 0;
+    font-family: 'Apple SD Gothic Neo Regular', 'Nanum Barun Gothic Regular';
+    font-size: 1.2em;
   }
 }

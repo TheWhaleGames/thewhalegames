@@ -11,9 +11,9 @@ var activateMenu = {
       $("li:first").css("margin-left", "$base-spacing");
       $("li:nth-child(4)").css("margin-right", "$base-spacing");
       $(".balloon_menu").click(function(){
-        $("#hamburger").toggleClass("active");
 
         if(count%2 == 0) {
+        $(".balloon_menu img").removeClass("animation_turnClockwise").addClass("animation_turnAntiClockwise");
           $("ul").removeClass("animation_slideOut").addClass("animation_slideIn");
 
           $($("ul li").get().reverse()).each(function(index){
@@ -25,6 +25,7 @@ var activateMenu = {
           });
         }
         else {
+        $(".balloon_menu img").removeClass("animation_turnAntiClockwise").addClass("animation_turnClockwise");
           $("ul").removeClass("animation_slideIn").addClass("animation_slideOut");
 
           $("ul li").each(function(index){

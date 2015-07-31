@@ -1,20 +1,35 @@
 #members {
+  margin-bottom: 110px;
   position: relative;
 
   h1 {
-    margin-bottom: $base-spacing * 2;
-    color: black;
+    font-family: 'Arial Bold';
+    margin-bottom: 110px;
+    font-size: 4em;
+    color: $black;
   }
 
   h2 {
+    margin-top: 90px;
+    margin-bottom: 30px;
+
+    font-size: 1.3em;
+    font-family: 'Arial Regular';
     display: inline-block;
     color: #3d4d51;
     border-bottom: 4px solid #a32c2c;
   }
+  
+  p {
+    font-family: 'Apple SD Gothic Neo Thin', 'Nanum Barun Gothic Light';
+    color: $black;
+    margin: 0;
+    font-size: 1em;
+  }
 
   img {
-    width: 5%;
+    width: 4%;
     display: inline-block;
-    margin-right: 2em;
+    margin-right: 1.825em;
   }
 }

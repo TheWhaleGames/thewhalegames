@@ -1,18 +1,21 @@
 #environment {
-  margin-bottom: $base-spacing*4;
+  margin-bottom: $base-spacing;
 
   h2 {
+    margin: 0;
+    font-family: 'Apple SD Gothic Neo Bold', 'Nanum Barun Gothic Bold';
     display: inline-block;
-    color: #767676;
+    color: $black;
     border-bottom: 4px solid #a32c2c;
   }
 
   .icon{
     display: block;
-    margin-top: $base-spacing;
-    margin-bottom: $base-spacing * 3;
+    margin-top: 30px;
+    margin-bottom: 110px;
 
     div {
+      font-family: 'Apple SD Gothic Neo Regular', 'Nanum Barun Gothic Regular';
       vertical-align: top;
       display: inline-block;
       width: 15%;        
@@ -20,26 +23,30 @@
       height: 240px;
 
       margin: 0;
+      p{ margin: 0; }
     }
   }
 
   #map {
-    margin-left: 20%;
-    margin-bottom: $base-spacing;
-    width: 60%;
-    height: 400px;
+    margin-left: 10%;
+    margin-bottom: 24px;
+    width: 80%;
+    height: 512px;
+  }
+
+  h3 {
+    margin-bottom: 14px;
   }
 
   #contact {
+    margin: 96px auto;
     height: 40px;
 
-    font-weight: bold;
+    font-family: 'Arial Regular';
     line-height: 40px;
-    padding: 0 50px;
+    padding: 0 100px;
 
     display: inline-block;
-
-    margin: $base-spacing*2 auto 0 auto;
 
     border: 1px solid #808080;
     border-radius: 100px;

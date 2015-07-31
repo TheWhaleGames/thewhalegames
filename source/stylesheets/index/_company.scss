@@ -3,11 +3,18 @@
   top : -500px;
 
   h1 {
-    margin-top: $small-spacing;
-    color: black;
+    font-family:'Apple SD Gothic Neo Bold', 'Nanum Barun Gothic Bold';
+    margin: 0;
+    margin-top : 0.6*$base-spacing;
+    font-size: 2em;
+    color: $black;
   }
 
   p {
-    margin-top : $small-spacing;
+    font-family: 'Apple SD Gothic Neo Thin', 'Nanum Barun Gothic UltraLight';
+    margin: 0;
+    font-size: 1.4em;
+    margin-top : 0.6*$base-spacing;
+    color: $black;
   }
 }

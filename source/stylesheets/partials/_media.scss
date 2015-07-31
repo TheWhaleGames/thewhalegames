@@ -1,6 +1,7 @@
 @media only screen and (min-width: 300px) and (max-width: 1024px) {
   html, body {
     width: 100%;
+    font-size: 1em;
   }
 
   h1 {
@@ -30,6 +31,7 @@
         }
       }
 
+
       .global-nav-move {
         display: none;
       }
@@ -38,12 +40,16 @@
 
   .hero {
     .wrap-container {
-      img.center_logo {
-        padding: 0 2%;
-      }
-
-      .vision {
-        width: 80%;
+      .gradient{
+        img.center_logo {
+          width: 95%;
+          padding: 0 1%;
+        }
+        .vision {
+          margin: 0;
+          width: 80%;
+          font-size: 0.8em;
+        }
       }
 
       .people_dancing {
@@ -66,7 +72,13 @@
       section {
         width: 96%;
         margin-bottom: 7%;
-        margin-left: 2.3%;
+        margin-left: 1%;
+      }
+
+      #company {
+        p {
+          font-size: 1em;
+        }
       }
 
       #bk_gradient {
@@ -88,20 +100,16 @@
       }
 
       #members {
-        .member {
-          section{
-            .black_overlay {
-              position: relative;
-              left: -2%;
-            }
-          }
-        }
         h1 {
+          margin-bottom: $small-spacing;
+        }
+        h2{
+          margin: 0;
           margin-bottom: $small-spacing;
         }
 
         img {
-          width: 7%;
+          width: 10%;
           margin-right: $small-spacing;
         }
       }
@@ -125,11 +133,13 @@
 
         #map {
           width: 100%;
+          height: 300px;
           margin: 0;
         }
 
         #contact {
           margin: $base-spacing 0;
+          font-size: 0.8em;
         }
       }
 
@@ -140,14 +150,7 @@
   }
 
   footer {
-    height: 2%;
-    a { display: none; }
-    .wrap-container-footer {
-      padding: $small-spacing;
-      address {
-        font-size: 0.8em;
-      }
-    }
+    height: 10%;
   }
 }
 

@@ -1,5 +1,51 @@
 // Typography
-$base-font-family: "나눔바른고딕", "나눔SD고딕", "Nanum Barun Gothic", "Apple SD Gothic Neo", "돋움", Dotum, "Helvetica", "Roboto", "Arial", sans-serif;
+@font-face {
+  font-family: 'Nanum Barun Gothic Regular';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Nanum Barun Gothic Regular'), local('Nanum Barun Gothic-Regular'), local('NanumBarunGothic Regular');
+  src: url("../../fonts/nanumbarungothicregular.eot");
+  src: url("../../fonts/nanumbarungothicregular.eot?#iefix") format('embedded-opentype'),
+  url("../../fonts/nanumbarungothicregular.woff") format('woff'),
+  url("../../fonts/nanumbarungothicregular.ttf") format('truetype'),
+  url("../../fonts/nanumbarungothicregular.svg") format('svg');
+}
+
+@font-face {
+  font-family: 'Nanum Barun Gothic Bold';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Nanum Barun Gothic Bold'), local('Nanum Barun Gothic-Bold'), local('NanumBarunGothic Bold');
+  src: url("../../fonts/nanumbarungothicbold.eot");
+  src: url("../../fonts/nanumbarungothicbold.eot?#iefix") format('embedded-opentype'),
+  url("../../fonts/nanumbarungothicbold.woff") format('woff'),
+  url("../../fonts/nanumbarungothicbold.ttf") format('truetype'),
+  url("../../fonts/nanumbarungothicbold.svg") format('svg');
+}
+
+@font-face {
+  font-family: 'Nanum Barun Gothic Light';
+  font-style: normal;
+  src: local('Nanum Barun Gothic Light'), local('Nanum Barun Gothic-Light'), local('NanumBarunGothic Light');
+  src: url("../../fonts/nanumbarungothiclight.eot");
+  src: url("../../fonts/nanumbarungothiclight.eot?#iefix") format('embedded-opentype'),
+  url("../../fonts/nanumbarungothiclight.woff") format('woff'),
+  url("../../fonts/nanumbarungothiclight.ttf") format('truetype'),
+  url("../../fonts/nanumbarungothiclight.svg") format('svg');
+}
+
+@font-face {
+  font-family: 'Nanum Barun Gothic UltraLight';
+  font-style: normal;
+  src: local('Nanum Barun Gothic UltraLight'), local('Nanum Barun Gothic-UltraLight'), local('NanumBarunGothic UltraLight');
+  src: url("../../fonts/nanumbarungothicultralight.eot");
+  src: url("../../fonts/nanumbarungothicultralight.eot?#iefix") format('embedded-opentype'),
+  url("../../fonts/nanumbarungothicultralight.woff") format('woff'),
+  url("../../fonts/nanumbarungothicultralight.ttf") format('truetype'),
+  url("../../fonts/nanumbarungothicultralight.svg") format('svg');
+}
+
+$base-font-family: "Apple SD Gothic Neo", "나눔바른고딕", "Nanum Barun Gothic", "돋움", Dotum, "Helvetica", "Roboto", "Arial", sans-serif;
 $heading-font-family: $base-font-family;
 
 // Font Sizes
@@ -18,7 +64,8 @@ $base-z-index: 0;
 
 // Colors
 $ci-primary: #be1e2d;
-$battlecomics-primary-color: #9b63b5;
+$battlecomics-primary-color: #542A68;
+$black: #323232;
 $blue: #477dca;
 $dark-gray: #333;
 $medium-gray: #787878;

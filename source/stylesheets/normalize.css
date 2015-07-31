@@ -10,6 +10,7 @@
 
 html, body{
   width: 100%;
+  font-family: 'Apple SD Gothic Neo' 'Nanum Barun Gothic Regular';
 }
 
 article,
@@ -144,7 +145,6 @@ dfn {
 em {
   font-style : normal;
   font-size: 2em;
-  font-weight: 900;
 }
 
 /*
@@ -165,7 +165,7 @@ code,
 kbd,
 pre,
 samp {
-    font-family: "나눔SD고딕" "Nanum Barun Gothic";
+    font-family: "Nanum Barun Gothic Regular" "나눔 SD고딕";
     font-size: 1em;
 }
 

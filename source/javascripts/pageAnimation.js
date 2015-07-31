@@ -52,7 +52,7 @@ var activateEffect = {
         var target = $(this);
 
         target.css({
-          "background-color": "#a32c2c",
+          "background-color": "#be1e2d",
           "opacity": "1"
         });
         target.children("#title").css("opacity", "0");
@@ -62,8 +62,8 @@ var activateEffect = {
         var target = $(this);
 
         target.css({
-          "background-color" : "#bbb",
-          "opacity": ".7"
+          "background-color" : "#323232",
+          "opacity": ".4"
         });
         target.children("#title").css("opacity", "1");
         target.children("#join_content").css("opacity", "0");
