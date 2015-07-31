@@ -64,6 +64,12 @@
       .detail {
         display: none;
       }
+
+      .pattern {
+        img.hammer, img.hammer_active {
+          width: 8%;
+        }
+      }
     }
   }
 
@@ -149,4 +155,3 @@
     }
   }
 }
-
