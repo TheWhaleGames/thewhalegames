@@ -1,10 +1,10 @@
 @-webkit-keyframes dance {
-  0% { bottom : 1%; }
+  0% { bottom: 1%; }
   50% { bottom: 7%; } 
   100% { bottom: 1%; }
 }
 @keyframes dance {
-  0% { bottom :1%; }
+  0% { bottom: 1%; }
   50% { bottom: 7%; } 
   100% { bottom: 1%; }
 }
