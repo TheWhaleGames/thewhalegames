@@ -15,7 +15,7 @@ var draw_triangle = {
 
   drawSecond: function() {
     $(window).on('load resize', function(){
-      var img_height =  $("#members").outerHeight(true) + $("#join_us").outerHeight(true) + $("#environment").outerHeight(true);
+      var img_height =  $("#members").outerHeight() + $("#join_us").outerHeight() + $("#environment").outerHeight();
       var img_width = $(window).outerWidth(true);
       
       $("#trianglify2 img").css("height", img_height);
