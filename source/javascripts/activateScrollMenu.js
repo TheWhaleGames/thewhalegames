@@ -33,7 +33,7 @@ var activateMenu = {
 
             setTimeout(function(){
               child.css("opacity", "1");
-            }, index*120);
+            }, index*130);
           });
 
         }
