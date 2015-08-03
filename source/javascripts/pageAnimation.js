@@ -51,23 +51,23 @@ var activateEffect = {
     $("#join_us div").each(function(){
       $(this).mouseenter(function(){
         var target = $(this);
-
         target.css({
           "background-color": "#be1e2d",
           "opacity": "1"
         });
-        target.children("#title").css("opacity", "0");
-        target.children("#join_content").css("opacity", "1");
+
+        target.children("#title").fadeOut(200);
+        target.children("#join_content").delay(200).fadeIn(500).css("opacity", "1");
       })
       .mouseleave(function(){
         var target = $(this);
-
         target.css({
           "background-color" : "#323232",
           "opacity": ".4"
         });
-        target.children("#title").css("opacity", "1");
-        target.children("#join_content").css("opacity", "0");
+
+        target.children("#title").delay(200).fadeIn(500);
+        target.children("#join_content").fadeOut(200).css("opacity", "0");
       })
     });
   },
@@ -98,32 +98,24 @@ var activateEffect = {
       $(this).bind("click", function(){
         /*display block when clicked*/
         if(idName == "#skkwon") {
-          $("#example").css("display", "inline-block");
+          $("#example").fadeIn(500).css("display", "inline-block");
         }
         else {
-          $("p#content").css("display", "inline-block");
+          $("p#content").fadeIn(500).css("display", "inline-block");
         }
         
-        $(idName).css("display", "block");
+        $(idName).fadeIn(500).css("display", "block");
 
-        $(idName).children(".profile").css("display", "block");
-        $(idName).children(".black_overlay").css("display", "block");
+        $(idName).children(".profile").fadeIn(500).css("display", "block");
+        $(idName).children(".black_overlay").fadeIn(500).css("display", "block");
 
         /*display none*/
         $(idName).children(".profile").bind("click", function(){
-          $(idName).css("display", "none");
-          $(this).css("display", "none");
-          $(idName).children(".black_overlay").css("display", "none");
-          $("#example").css("display", "none");
-          $("p#content").css("display", "none");
+          $(".member section").fadeOut(500);
         });
 
         $(idName).children(".black_overlay").bind("click", function(){
-          $(idName).css("display", "none");
-          $(this).css("display", "none");
-          $(idName).children(".profile").css("display", "none");
-          $("#example").css("display", "none");
-          $("p#content").css("display", "none");
+          $(".member section").fadeOut(500);
         });
       });
     });

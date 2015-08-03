@@ -21,7 +21,7 @@ var activateMenu = {
 
             setTimeout(function(){
               child.css("opacity", "0");
-            }, index*180);
+            }, index*170);
           });
         }
         else {
@@ -33,7 +33,7 @@ var activateMenu = {
 
             setTimeout(function(){
               child.css("opacity", "1");
-            }, index*130);
+            }, index*125);
           });
 
         }

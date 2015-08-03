@@ -39,47 +39,35 @@
         .wrap_left{
           display: inline-block;
           width: 40%;
-          height: 100%;
+          vertical-align: middle;
 
           position: absolute;
-          top: 0;
+          top: 50%;
           left: 0;
+          
+          -webkit-transform: translateY(-30%);
+          -moz-transform: translateY(-30%);
+          -ms-transform: translateY(-30%);
+          transform: translateY(-30%);
 
           text-align: center;
 
           img {
             width: 50%;
+            margin: 0;
 
-            position: absolute;
-            top: 50%;
-            left: 0;
-
-            -webkit-transform: translateY(-50%);
-            -moz-transform: translateY(-50%);
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
+            position: relative;
 
             border-radius: 100px;
           }
 
           .profile__name {
-            margin-top: $base-spacing;
+            margin-top: $small-spacing;
             width: 100%;
-
-            display: block;
 
             font-size: 1.5em;
             font-weight: normal;
             color: white;
-
-            position: absolute;
-            top: 58%;
-            left: 50%;
-
-            -webkit-transform: translateX(-75%);
-            -moz-transform: translateX(-75%);
-            -ms-transform: translateX(-75%);
-            transform: translateX(-75%);
           }
 
           .profile__position {
@@ -91,6 +79,7 @@
 
         .wrap_right{
           display: inline-block;
+          vertical-align: middle;
 
           width: 70%;
           height: 100%;

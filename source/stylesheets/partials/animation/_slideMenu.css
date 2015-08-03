@@ -118,8 +118,8 @@
 .animation_turnAntiClockwise {
   -webkit-animation-name: turnAntiClockwise;
   animation-name: turnAntiClockwise;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in-out;
@@ -135,8 +135,8 @@
 .animation_turnClockwise {
   -webkit-animation-name: turnClockwise;
   animation-name: turnClockwise;
-  -webkit-animation-duration: 0.8s;
-  animation-duration: 0.8s;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in-out;

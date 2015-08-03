@@ -44,19 +44,21 @@
         display: inline-block;
         font-size: 0.8em;
 
-        position: absolute;
-        top: 0;
-        left: 50%;
+        p {
+          margin: 0;
+          position: absolute;
+          top: 0;
 
-        -webkit-transform: translate(-50%, -105%);
-        -moz-transform: translate(-50%, -105%);
-        -ms-transform: translate(-50%, -105%);
-        transform: translate(-50%, -105%);
+          -webkit-transform: translateY(-105%);
+          -moz-transform: translateY(-105%);
+          -ms-transform: translateY(-105%);
+          transform: translateY(-105%);
+        }
       }
 
-      .scroll:hover{
+      .scroll:hover {
         cursor: default;
-        color: darken(white, 30);
+        opacity: .3;
       }
     }
 
@@ -111,7 +113,7 @@
       bottom : 0;
       z-index: 1;
 
-      height: 7%;
+      height: 8%;
       width: 100%;
       background-image: url('../../images/pattern01.png');
       background-repeat: repeat;

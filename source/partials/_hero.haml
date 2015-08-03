@@ -6,8 +6,10 @@
       %p.vision
         더웨일게임즈는 세상을 더 재미있게 만든다라는 비전을 가지고 모인 팀입니다
     .detail
-      .scroll scroll
-      = image_tag('scroll_icon.png', alt: 'scroll_icon', class: 'scroll_img')
+      .scroll 
+        %p
+          scroll
+      = image_tag('scroll_icon.png', alt: 'scroll_icon', class: 'scroll')
     .people_dancing
       - current_page.data.members.each do |member|
         = image_tag("members_dance/#{member}.png", alt: member, class: member)

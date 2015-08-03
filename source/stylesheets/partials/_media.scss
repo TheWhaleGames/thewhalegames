@@ -22,16 +22,6 @@
 
   .global-nav {
     .wrap-container {
-      .global-nav-item {
-        img.banner_logo {
-          width: 100px;
-          @media screen and (max-width: 500px) {
-            display: none;
-          }
-        }
-      }
-
-
       .global-nav-move {
         display: none;
       }

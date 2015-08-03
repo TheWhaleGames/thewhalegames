@@ -1,9 +1,8 @@
 $(function(){
-  $(".hero").css("height", $(window).height());
+  $(".index .hero").css("height", $(window).height());
 
   $(window).on('load resize', function(){
-
-    $(".hero").css("height", $(window).height());
+    $(".index .hero").css("height", $(window).height());
 
     if($(window).width() >= 1024) {
       activateEffect.memberProfile();
@@ -18,5 +17,4 @@ $(function(){
 
   activateEffect.dance();
   activateEffect.hoverEffect();
-
 });
