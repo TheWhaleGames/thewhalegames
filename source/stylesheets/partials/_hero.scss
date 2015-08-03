@@ -61,6 +61,9 @@
       .scroll:hover {
         cursor: default;
         opacity: .3;
+        p {
+          opacity: .3;
+        }
       }
     }
 
