@@ -79,7 +79,7 @@
         max-height: 75px;
 
         -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
-        filter: url(#drop-shadow);
+        filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
         -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
         filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
       }
