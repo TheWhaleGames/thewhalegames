@@ -11,7 +11,7 @@ function msieversion() {
 $(function(){
   var version = msieversion();
 
-  if(version < 10){
+  if($(document).hasClass("ie") && version < 10){
     alert("IE10 이상 또는 다른 브라우저를 이용해주십시오.");
     $("#service").css("opacity", "1");
   }
