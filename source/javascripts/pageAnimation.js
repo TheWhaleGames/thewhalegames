@@ -38,7 +38,7 @@ var activateEffect = {
           });
         }
         else {
-          $(this).css("bottom", "1%");
+          $(this).css("bottom", "0");
           $(this).removeClass("animation_rocket");
           $(this).removeClass("animation_shake");
         }

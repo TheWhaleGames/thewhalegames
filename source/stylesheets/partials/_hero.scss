@@ -2,6 +2,8 @@
   font-weight: lighter;
   color: white;
 
+  height: 100%;
+
   .wrap-container {
     height: inherit;
     text-align: center;
@@ -68,9 +70,10 @@
       img {
         display: inline-block;
         position: absolute;
-        bottom: 1%;
+        bottom: 0;
 
         width: 3%;
+        max-height: 75px;
 
         -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
         filter: url(#drop-shadow);
@@ -113,7 +116,6 @@
       bottom : 0;
       z-index: 1;
 
-      height: 8%;
       width: 100%;
       background-image: url('../../images/pattern01.png');
       background-repeat: repeat;

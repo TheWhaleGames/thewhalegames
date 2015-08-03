@@ -1,9 +1,10 @@
 $(function(){
-  $(".index .hero").css("height", $(window).height());
+  $(".hero").css("height", $(window).height());
+});
 
+$(document).ready(function(){
   $(window).on('load resize', function(){
-    $(".index .hero").css("height", $(window).height());
-
+    $(".pattern").css("height", $(".people_dancing img").height()*0.7);
     if($(window).width() >= 1024) {
       activateEffect.memberProfile();
     }
