@@ -1,3 +1,7 @@
+$(function(){
+  $(".hero").css("height", $(window).height());
+});
+
 $(document).ready(function(){
   if(version != 0 && version < 10){
     detect_ie();

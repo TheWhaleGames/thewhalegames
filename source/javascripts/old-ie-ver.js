@@ -14,11 +14,6 @@ function detect_ie() {
   if(version < 10 && version != 0){
     alert("IE10 이상 또는 다른 브라우저를 이용해주십시오.");
   }
-  else {
-    $(function(){
-      $(".hero").css("height", $(window).height());
-    });
-  };
 
   if(version == 9){
     $(".people_dancing img").css({
