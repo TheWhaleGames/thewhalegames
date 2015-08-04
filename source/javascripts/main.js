@@ -1,27 +1,32 @@
 function msieversion() {
   var ua = window.navigator.userAgent;
-  var msie = ua.indexOf("MSIE");
+  var msie = ua.indexOf("MSIE ");
 
-  if(msie > 0)
-    return parseInt(ua.substring(msie+5, ua.indexOf(".", msie)));
-  else
+  if (msie > 0)      // If Internet Explorer, return version number
+    return parseInt(ua.substring(msie + 5, ua.indexOf(".", msie)));
+  else                 // If another browser, return 0
     return 0;
 }
 
-$(function(){
-  var version = msieversion();
-  console.log(version);
+var version = msieversion();
 
-  if(version < 10 && version > 4){
+if(version < 10 && version != 0)
     alert("IE10 이상 또는 다른 브라우저를 이용해주십시오.");
-    $("#service").css("opacity", "1");
-    $(".people_dancing img").css("bottom", "7%");
-  }
 
+$(function(){
   $(".hero").css("height", $(window).height());
 });
 
 $(document).ready(function(){
+
+  if(version != 0 && version < 10){
+    $("#service").css("opacity", "1");
+    $(".people_dancing img").css({
+      "margin-right": "9%",
+      "bottom": "7%"
+    });
+  }
+
   $(window).on('load resize', function(){
     $(".hero").css("height", $(window).height());
     $(".pattern").css("height", $(".people_dancing img").height()*0.7);
