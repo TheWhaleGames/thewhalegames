@@ -10,6 +10,10 @@ members:
   - kyjung
   - jwheo
   - ysshin
+  - dmbyun
+  - jhseo
+  - jwchoi
+  - syhan
   - mjkang
 ---
 
@@ -56,7 +60,7 @@ members:
     %h1 TEAM
     .member
       - current_page.data.members.each do |member|
-        = image_tag("members/#{member}.jpg", alt: member, class: member)
+        = image_tag("members/#{member}.png", alt: member, class: member)
         %section{id: "#{member}"}
           .black_overlay
           = partial "partials/members/#{member}"
