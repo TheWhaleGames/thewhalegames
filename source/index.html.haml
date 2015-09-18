@@ -60,7 +60,7 @@ members:
     %h1 TEAM
     .member
       - current_page.data.members.each do |member|
-        = image_tag("members/#{member}.png", alt: member, class: member)
+        = image_tag("members/#{member}.png", alt: member, class: member, id: 'members_displayed')
         %section{id: "#{member}"}
           .black_overlay
           = partial "partials/members/#{member}"

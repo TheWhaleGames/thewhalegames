@@ -43,8 +43,8 @@
 
           position: absolute;
           top: 50%;
-          left: 0;
-          
+          left: -$base-spacing;
+
           -webkit-transform: translateY(-30%);
           -moz-transform: translateY(-30%);
           -ms-transform: translateY(-30%);
@@ -53,25 +53,34 @@
           text-align: center;
 
           .profile__me {
-            width: 80%;
+            display: inline-block;
+            width: 210px;
+            height: 210px;
+            border-radius: 100px;
+            background-color: white;
 
             position: relative;
 
-            img {
-              position: absolute;
-              bottom: 0;
 
-              width: 40%;
+            img#me {
+              position: absolute;
+              left: 50%;
+              top: 50%;
+
+              -webkit-transform: translate(-50%, -50%);
+              -moz-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+
+              width: auto;
+              height: 150px;
               margin: 0;
             }
 
-            background-color: white;
-            border-radius: 200px;
           }
 
           .profile__name {
             margin-top: $small-spacing;
-            width: 100%;
 
             font-size: 1.5em;
             font-weight: normal;
