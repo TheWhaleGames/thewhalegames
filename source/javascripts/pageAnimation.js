@@ -73,6 +73,8 @@ var activateEffect = {
   },
 
   memberProfile: function(){
+    console.log($('.profile__me').width())
+
     $(".member img").each(function(){
       var idName = "#" + $(this).attr('class');
 

@@ -75,8 +75,8 @@
         position: absolute;
         bottom: 0;
 
-        width: 3%;
         max-height: 75px;
+        height: 50px;
 
         -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
         filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
@@ -85,37 +85,46 @@
       }
 
       .skkwon {
-        left: 8%;
+        left: 3%;
       }
       .sbpark {
-        left: 16%;
+        left: 10%;
       }
       .sybae {
-        left: 24%;
+        left: 17%;
       }
       .fred {
-        left: 32%;
+        left: 24%;
       }
       .skyoon {
-        left: 40%;
-      }
-      .eslee {
-        left: 48%;
+        left: 31%;
       }
       .jhlim {
-        left: 56%;
+        left: 38%;
       }
       .kyjung {
-        left: 64%;
+        left: 45%;
       }
       .jwheo {
-        left: 72%;
+        left: 52%;
       }
       .ysshin {
+        left: 59%;
+      }
+      .dmbyun {
+        left: 66%;
+      }
+      .jhseo {
+        left: 73%;
+      }
+      .jwchoi {
         left: 80%;
       }
-      .mjkang {
+      .syhan {
         left: 88%;
+      }
+      .mjkang {
+        left: 95%;
       }
     }
 
