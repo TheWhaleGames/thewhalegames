@@ -15,7 +15,7 @@ var activateEffect = {
         count++;
 
         if(count%2 == 1) {
-          $(this).css("bottom", "5%");
+          $(this).css("bottom", "2%");
           $(this).addClass("animation_shake");
 
           $(".hammer").css("display", "inline-block").offset({
