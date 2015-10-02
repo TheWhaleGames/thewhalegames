@@ -1,4 +1,5 @@
 $(function(){
+  $(".pattern").css("height", $(".people_dancing img").height()*0.7);
   $(".hero").css("height", $(window).height());
 });
 
