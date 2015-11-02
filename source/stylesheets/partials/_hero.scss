@@ -69,62 +69,22 @@
 
     .people_dancing {
       -webkit-backface-visibility: hidden;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
 
       img {
         display: inline-block;
-        position: absolute;
-        bottom: 0;
 
-        max-height: 75px;
-        height: 50px;
+        min-height: 50px;
+        height: 60px;
+
+        margin: 0 2.5%;
 
         -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
         filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
         -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
         filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-      }
-
-      .skkwon {
-        left: 3%;
-      }
-      .sbpark {
-        left: 10%;
-      }
-      .sybae {
-        left: 17%;
-      }
-      .fred {
-        left: 24%;
-      }
-      .skyoon {
-        left: 31%;
-      }
-      .jhlim {
-        left: 38%;
-      }
-      .kyjung {
-        left: 45%;
-      }
-      .jwheo {
-        left: 52%;
-      }
-      .ysshin {
-        left: 59%;
-      }
-      .dmbyun {
-        left: 66%;
-      }
-      .jhseo {
-        left: 73%;
-      }
-      .jwchoi {
-        left: 80%;
-      }
-      .syhan {
-        left: 88%;
-      }
-      .mjkang {
-        left: 95%;
       }
     }
 
