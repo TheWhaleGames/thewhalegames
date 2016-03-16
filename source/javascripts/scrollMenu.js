@@ -51,14 +51,17 @@ var activateMenu = {
       var scroll = $(window).scrollTop();
       if(scroll >= heroHeight){
         $("li.global-nav-item").css("color", "#787878");
+        $("li.global-nav-item a").css("color", "#787878");
 
         if(scroll >= gradientTop && scroll < gradientBottom){
           $("li.global-nav-item").css("color", "white");
+          $("li.global-nav-item a").css("color", "white");
           $("#service").addClass("animation_slideAppear");
         }
       }
       else {
         $("li.global-nav-item").css("color", "white");
+        $("li.global-nav-item a").css("color", "white");
       }
     });
   }
