@@ -41,6 +41,7 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  activate :asset_host, :host => "http://www.thewhalegames.com"
 end
 
 activate :deploy do |deploy|
