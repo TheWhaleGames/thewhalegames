@@ -1,0 +1,42 @@
+!!!
+%html 
+  %head
+    %meta{'charset' => 'utf-8'}
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    %meta{'content' => 'IE=edge,chrome=1', 'http-equiv' => 'X-UA-Compatible'}
+    %meta{:name => "viewport", :content => "width=device-width, initial-scale=1"}
+    %meta{:name => "description", :content => "Ruby on Rails, Frontend, 모바일 앱 개발자를 찾고 있습니다"}
+    %meta{:name => "keywords", :content => "배틀코믹스,개발자,구인,RoR,Ruby on rails"}
+
+    %meta{:property => "og:title", :content => "배틀코믹스에서 개발자를 찾습니다"}
+    %meta{:property => "og:site_name", :content => "더웨일게임즈"}
+    %meta{:property => "og:type", :content => "website"}
+    %meta{:property => "og:description", :content => "Ruby on Rails, Frontend, 모바일 앱 개발자를 찾고 있습니다."}
+    %meta{:property => "og:url", :content => "http://www.thewhalegames.com/joinus.html"}
+    %meta{:property => "og:image", :content => image_path("wantu.jpg")}
+
+
+    %meta{:name => "twitter:card", :content => "summary_large_image"}
+    %meta{:name => "twitter:title", :content => "배틀코믹스에서 힘쎄고 강한 개발자를 찾습니다"}
+    %meta{:name => "twitter:description", :content => "Ruby on Rails, Frontend, 모바일 앱 개발자를 찾고 있습니다."}
+    %meta{:name => "twitter:image", :content => image_path("wantu.jpg")}
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    %title= current_page.data.title || "The Middleman"
+
+    = stylesheet_link_tag "normalize", "joinus"
+
+  %body{class: page_classes}
+    = yield
+    = partial "partials/footer"
+
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-M8DX3W"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M8DX3W');</script>
+    <!-- End Google Tag Manager -->

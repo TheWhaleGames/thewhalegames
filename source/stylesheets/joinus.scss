@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import "bourbon";
+@import "base/base";
+@import "neat";
+
+.joinus {
+  background-color: #efefef;
+  color: $black;
+  .container {
+    margin: 0 auto;
+    max-width: 720px;
+    padding: 0 $base-spacing/2;
+  }
+  footer {
+    background-color: #2f2f2f;
+    color: $light-gray;
+    min-height: 200px;
+    text-align: center;
+    padding: $base-spacing;
+    margin-top: $base-spacing*2;
+  }
+
+  h1 {
+    text-align: center;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  a {
+    color: $battlecomics-primary-color;
+    text-decoration: underline;
+  }
+}
